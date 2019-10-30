@@ -3,41 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/nav_home">
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.fitbros.ui.home.HomeFragment"
+        android:name="com.example.fitbros.Fragments.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.fitbros.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_upper_body"
+        android:name="com.example.fitbros.Fragments.UpperBodyFragment"
+        android:label="@string/menu_upper_body"
+        tools:layout="@layout/fragment_upper_body" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.fitbros.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
+        android:id="@+id/nav_lower_body"
+        android:name="com.example.fitbros.Fragments.LowerBodyFragment"
+        android:label="@string/menu_lower_body"
+        tools:layout="@layout/fragment_lower_body" />
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.fitbros.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
+        android:id="@+id/nav_core_muscles"
+        android:name="com.example.fitbros.Fragments.CoreFragment"
+        android:label="@string/menu_core_muscles"
+        tools:layout="@layout/fragment_core" />
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.fitbros.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
+        android:id="@+id/nav_cardio"
+        android:name="com.example.fitbros.Fragments.CardioFragment"
+        android:label="@string/menu_cardio"
+        tools:layout="@layout/fragment_cardio" />
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.fitbros.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_calculator"
+        android:name="com.example.fitbros.Fragments.ToolFragment"
+        android:label="@string/menu_tool"
+        tools:layout="@layout/fragment_tool" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.fitbros.Fragments.CreditsFragment"
+        android:label="@string/menu_credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>
