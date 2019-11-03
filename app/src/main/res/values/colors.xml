@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#4B83B0</color>
+    <color name="colorPrimaryDark">#535f82</color>
+    <color name="colorAccent">#33b5E5</color>
+
+
+    <!-- Blue Colour Set -->
+    <!-- Typography -->
+    <color name="colorTextIndigo">#272635</color>
+    <!-- Menu Icons -->
+    <color name="colorBlueGray">#6683A1</color>
+    <!-- Additional Blues -->
+    <color name="colorBlueLight">#33B5E5</color>
+    <color name="colorBlueMedium">#4B83B0</color>
+    <color name="colorBlueDark">#535f82</color>
+
+    <!-- Colour set inspired by:
+    Source: https://www.mypersonaltrainerwebsite.com/blog/how-to-use-color-psychology-to-create-the-perfect-fitness-website -->
+
 </resources>

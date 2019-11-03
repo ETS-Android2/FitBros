@@ -1,16 +1,28 @@
 <resources>
     <string name="app_name">FitBros</string>
+    <string name="nav_header_title">FitBros Workout Buddy</string>
+    <string name="nav_header_subtitle">Strong Hearts. Strong Body.</string>
+    <string name="nav_drawer_subtitle">FitBros Extras</string>
+
+    <!-- default settings -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- navigation titles -->
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_upper_body">Upper Body</string>
+    <string name="menu_lower_body">Lower Body</string>
+    <string name="menu_core_muscles">Core Muscles</string>
+    <string name="menu_cardio">Cardio</string>
+    <string name="menu_tool">Tool</string>
+    <string name="menu_credits">Credits</string>
+
+    <!-- sub-navigation titles -->
+    <string name="submenu_cardio_treadmill">Treadmill</string>
+    <string name="submenu_cardio_cycle">Cycle</string>
+    <string name="submenu_cardio_jump">Jump Rope</string>
+
 </resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.CardioFragment">
+
+
+    <ImageView
+        android:id="@+id/imageCardio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_picture"
+        android:src="@android:drawable/ic_secure" />
+
+    <Button
+        android:id="@+id/buttonTreadmill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/submenu_cardio_treadmill"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonCycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/submenu_cardio_cycle"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonJump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/submenu_cardio_jump"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+</LinearLayout>
