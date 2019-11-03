@@ -20,4 +20,9 @@
     <string name="menu_tool">Tool</string>
     <string name="menu_credits">Credits</string>
 
+    <!-- sub-navigation titles -->
+    <string name="submenu_cardio_treadmill">Treadmill</string>
+    <string name="submenu_cardio_cycle">Cycle</string>
+    <string name="submenu_cardio_jump">Jump Rope</string>
+
 </resources>
