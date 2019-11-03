@@ -49,14 +49,7 @@ public class HomeFragment extends Fragment {
         listView = view.findViewById(R.id.homeNavList);
 
         final ArrayList<NavType> navTypes = new ArrayList<>();
-
-//        navTypes.add(new NavType (R.string.menu_upper_body, R.string.));
-//        navTypes.add(new NavType("@string/menu_upper_body", "@string/description_upper_body"));
-//        navTypes.add(new NavType("@string/menu_lower_body", "@string/description_lower_body"));
-//        navTypes.add(new NavType("@string/menu_core_muscles", "@string/description_core_muscles"));
-//        navTypes.add(new NavType("@string/menu_cardio", "@string/description_cardio"));
-//        navTypes.add(new NavType("@string/submenu_tools_BMI", "@string/description_BMI"));
-//        navTypes.add(new NavType("@string/submenu_tools_RFM", "@string/description_RFM"));
+        
         navTypes.add(new NavType (getResources().getString(R.string.menu_upper_body), getResources().getString(R.string.description_upper_body)));
         navTypes.add(new NavType (getResources().getString(R.string.menu_lower_body), getResources().getString(R.string.description_lower_body)));
         navTypes.add(new NavType (getResources().getString(R.string.menu_core_muscles), getResources().getString(R.string.description_core_muscles)));
