@@ -17,12 +17,17 @@
     <string name="menu_lower_body">Lower Body</string>
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
-    <string name="menu_tool">Tool</string>
+    <string name="menu_tool">Calculators</string>
     <string name="menu_credits">Credits</string>
 
     <!-- sub-navigation titles -->
     <string name="submenu_cardio_treadmill">Treadmill</string>
     <string name="submenu_cardio_cycle">Cycle</string>
     <string name="submenu_cardio_jump">Jump Rope</string>
+    <string name="submenu_tools_BMI">BMI: Body Mass Index</string>
+    <string name="submenu_tools_RFM">RFM: Relative Fat Mass Index</string>
+
+    <!-- content -->
+    <string name="content_tools_info_BMI">Body Mass </string>
 
 </resources>
