@@ -17,6 +17,7 @@
     <string name="menu_lower_body">Lower Body</string>
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
+    <string name="menu_cardio_long">Cardio Workout</string>
     <string name="menu_tool">Calculators</string>
     <string name="menu_credits">Credits</string>
 
@@ -25,9 +26,21 @@
     <string name="submenu_cardio_cycle">Cycle</string>
     <string name="submenu_cardio_jump">Jump Rope</string>
     <string name="submenu_tools_BMI">BMI: Body Mass Index</string>
+    <string name="submenu_tools_BMI_short">BMI Calculator</string>
     <string name="submenu_tools_RFM">RFM: Relative Fat Mass Index</string>
+    <string name="submenu_tools_RFM_short">RFM Calculator</string>
 
     <!-- content -->
-    <string name="content_tools_info_BMI">Body Mass </string>
+    <string name="content_home_welcome">Content</string>
+    <string name="content_tools_info_BMI">Content</string>
+    <string name="content_tools_info_RFM">Content</string>
+
+    <!-- ListView content -->
+    <string name="description_upper_body">Content Upper Body</string>
+    <string name="description_lower_body">Content Lower Body</string>
+    <string name="description_core_muscles">Content Core Muscles</string>
+    <string name="description_cardio">Content Cardio</string>
+    <string name="description_BMI">Content BMI</string>
+    <string name="description_RFM">Content RFM</string>
 
 </resources>
