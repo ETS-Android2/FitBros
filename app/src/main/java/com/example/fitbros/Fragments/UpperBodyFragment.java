@@ -8,8 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.example.fitbros.NavType;
 import com.example.fitbros.R;
+
+import java.util.ArrayList;
 
 
 /**
@@ -26,8 +31,10 @@ public class UpperBodyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_upper_body, container, false);
+        View view = inflater.inflate(R.layout.fragment_upper_body, container, false);
+
+
+        return view;
     }
 
 }

@@ -22,6 +22,15 @@
     <string name="menu_credits">Credits</string>
 
     <!-- sub-navigation titles -->
+    <string name="submenu_upper_bicep">Bicep</string>
+    <string name="submenu_upper_tricep">Tricep</string>
+    <string name="submenu_upper_chest">Chest</string>
+    <string name="submenu_lower_quad">Quads</string>
+    <string name="submenu_lower_hamstring">Hamstrings</string>
+    <string name="submenu_lower_calves">Calves</string>
+    <string name="submenu_core_abs">Abdominals</string>
+    <string name="submenu_core_obliques">Obliques</string>
+    <string name="submenu_core_glutes">Glutes</string>
     <string name="submenu_cardio_treadmill">Treadmill</string>
     <string name="submenu_cardio_cycle">Cycle</string>
     <string name="submenu_cardio_jump">Jump Rope</string>
