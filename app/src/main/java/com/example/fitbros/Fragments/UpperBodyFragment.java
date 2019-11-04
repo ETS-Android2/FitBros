@@ -22,7 +22,6 @@ import java.util.ArrayList;
  */
 public class UpperBodyFragment extends Fragment {
 
-    ListView listView;
 
     public UpperBodyFragment() {
         // Required empty public constructor
@@ -34,18 +33,6 @@ public class UpperBodyFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_upper_body, container, false);
 
-        listView = view.findViewById(R.id.upperBodyListView);
-        final ArrayList<NavType> navTypes = new ArrayList<>();
-
-        navTypes.add(new NavType("Bicep", ""));
-        navTypes.add(new NavType("Tricep", ""));
-        navTypes.add(new NavType("Chest", ""));
-        navTypes.add(new NavType("Back", ""));
-
-
-        ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, navTypes);
-
-        listView.setAdapter(adapter);
 
         return view;
     }

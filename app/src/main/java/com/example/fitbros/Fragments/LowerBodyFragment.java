@@ -22,7 +22,6 @@ import java.util.ArrayList;
  */
 public class LowerBodyFragment extends Fragment {
 
-    ListView listView;
 
     public LowerBodyFragment() {
         // Required empty public constructor
@@ -33,19 +32,6 @@ public class LowerBodyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_lower_body, container, false);
-
-        listView = view.findViewById(R.id.lowerBodyListView);
-        final ArrayList<NavType > navTypes = new ArrayList<>();
-
-        navTypes.add(new NavType("Quadriceps", ""));
-        navTypes.add(new NavType("Glutes", ""));
-        navTypes.add(new NavType("Calves", ""));
-        navTypes.add(new NavType("Hamstrings", ""));
-
-
-        ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, navTypes);
-
-        listView.setAdapter(adapter);
 
 
         return view;
