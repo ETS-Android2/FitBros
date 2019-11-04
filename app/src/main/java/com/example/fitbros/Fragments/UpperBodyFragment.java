@@ -42,6 +42,7 @@ public class UpperBodyFragment extends Fragment {
         navTypes.add(new NavType("Chest", ""));
         navTypes.add(new NavType("Back", ""));
 
+
         ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, navTypes);
 
         listView.setAdapter(adapter);
