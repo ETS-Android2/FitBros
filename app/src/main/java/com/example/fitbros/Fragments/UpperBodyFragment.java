@@ -8,8 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.example.fitbros.NavType;
 import com.example.fitbros.R;
+
+import java.util.ArrayList;
 
 
 /**
@@ -17,6 +22,7 @@ import com.example.fitbros.R;
  */
 public class UpperBodyFragment extends Fragment {
 
+    ListView listView;
 
     public UpperBodyFragment() {
         // Required empty public constructor
@@ -26,8 +32,21 @@ public class UpperBodyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_upper_body, container, false);
+        View view = inflater.inflate(R.layout.fragment_upper_body, container, false);
+
+        listView = view.findViewById(R.id.upperBodyListView);
+        final ArrayList<NavType> navTypes = new ArrayList<>();
+
+        navTypes.add(new NavType("Bicep", ""));
+        navTypes.add(new NavType("Tricep", ""));
+        navTypes.add(new NavType("Chest", ""));
+        navTypes.add(new NavType("Back", ""));
+
+        ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, navTypes);
+
+        listView.setAdapter(adapter);
+
+        return view;
     }
 
 }
