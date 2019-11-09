@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.fitbros.Constants;
 import com.example.fitbros.NavType;
 import com.example.fitbros.R;
 
@@ -45,6 +46,8 @@ public class CoreFragment extends Fragment {
         absButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
         });
@@ -52,6 +55,8 @@ public class CoreFragment extends Fragment {
         obliquesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
         });
@@ -59,6 +64,8 @@ public class CoreFragment extends Fragment {
         glutesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
         });

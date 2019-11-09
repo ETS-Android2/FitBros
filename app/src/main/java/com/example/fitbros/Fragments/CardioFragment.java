@@ -11,7 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.fitbros.Constants;
 import com.example.fitbros.R;
+import com.example.fitbros.Workout;
 
 
 /**
@@ -40,6 +42,8 @@ public class CardioFragment extends Fragment {
         treadmillButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
         });
@@ -47,6 +51,8 @@ public class CardioFragment extends Fragment {
         cycleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
         });
@@ -54,6 +60,8 @@ public class CardioFragment extends Fragment {
         jumpRopeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
         });
