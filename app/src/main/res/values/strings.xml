@@ -18,7 +18,7 @@
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
     <string name="menu_cardio_long">Cardio Workout</string>
-    <string name="menu_tool">Tools</string>
+    <string name="menu_tool">Tools &amp; Calculators</string>
     <string name="menu_credits">Credits</string>
 
     <!-- sub-navigation titles -->
@@ -49,10 +49,9 @@
     <string name="description_lower_body">Content Lower Body</string>
     <string name="description_core_muscles">Content Core Muscles</string>
     <string name="description_cardio">Content Cardio</string>
-    <string name="description_BMI">Content BMI</string>
-    <string name="description_RFM">Content RFM</string>
+    <string name="description_tools">Content Tools</string>
 
-    <!-- Tools content -->
+    <!-- Tool content: BMI -->
     <string name="tool_name_BMI">BMI Calculator</string>
     <string name="tool_BMI_weight">Weight</string>
     <string name="tool_BMI_weight_hint">weight in lbs</string>
@@ -61,5 +60,9 @@
     <string name="tool_BMI_result">Result</string>
     <string name="tool_BMI_result_hint">your result</string>
     <string name="tool_BMI_calculate">Calculate</string>
+    <string name="description_BMI">Content BMI</string>
+
+    <!-- Tool content: RFM -->
+    <string name="description_RFM">Content RFM</string>
 
 </resources>
