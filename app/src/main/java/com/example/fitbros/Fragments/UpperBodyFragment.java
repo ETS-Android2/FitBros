@@ -4,13 +4,17 @@ package com.example.fitbros.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.fitbros.Constants;
 import com.example.fitbros.NavType;
 import com.example.fitbros.R;
 
@@ -22,6 +26,10 @@ import java.util.ArrayList;
  */
 public class UpperBodyFragment extends Fragment {
 
+    Button bicepButton;
+    Button tricepButton;
+    Button chestButton;
+
 
     public UpperBodyFragment() {
         // Required empty public constructor
@@ -31,8 +39,38 @@ public class UpperBodyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_upper_body, container, false);
+        final View view = inflater.inflate(R.layout.fragment_upper_body, container, false);
 
+        bicepButton = view.findViewById(R.id.buttonBicep);
+        tricepButton = view.findViewById(R.id.buttonTricep);
+        chestButton = view.findViewById(R.id.buttonChest);
+
+        bicepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
+                Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
+            }
+        });
+
+        tricepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
+                Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
+            }
+        });
+
+        chestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Constants.workouts.removeAll(Constants.workouts);
+
+                Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
+            }
+        });
 
         return view;
     }

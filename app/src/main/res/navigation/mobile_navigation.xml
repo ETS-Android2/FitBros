@@ -13,22 +13,38 @@
         android:id="@+id/nav_upper_body"
         android:name="com.example.fitbros.Fragments.UpperBodyFragment"
         android:label="@string/menu_upper_body"
-        tools:layout="@layout/fragment_upper_body" />
+        tools:layout="@layout/fragment_upper_body" >
+        <action
+            android:id="@+id/action_nav_upper_body_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_lower_body"
         android:name="com.example.fitbros.Fragments.LowerBodyFragment"
         android:label="@string/menu_lower_body"
-        tools:layout="@layout/fragment_lower_body" />
+        tools:layout="@layout/fragment_lower_body" >
+        <action
+            android:id="@+id/action_nav_lower_body_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_core_muscles"
         android:name="com.example.fitbros.Fragments.CoreFragment"
         android:label="@string/menu_core_muscles"
-        tools:layout="@layout/fragment_core" />
+        tools:layout="@layout/fragment_core" >
+        <action
+            android:id="@+id/action_nav_core_muscles_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_cardio"
         android:name="com.example.fitbros.Fragments.CardioFragment"
         android:label="@string/menu_cardio"
-        tools:layout="@layout/fragment_cardio" />
+        tools:layout="@layout/fragment_cardio" >
+        <action
+            android:id="@+id/action_nav_cardio_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.example.fitbros.Fragments.ToolFragment"
@@ -39,4 +55,9 @@
         android:name="com.example.fitbros.Fragments.CreditsFragment"
         android:label="@string/menu_credits"
         tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.fitbros.Fragments.WorkoutFragment"
+        android:label="Workouts"
+        tools:layout="@layout/fragment_workout" />
 </navigation>
