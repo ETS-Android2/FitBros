@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    tools:context=".Fragments.ToolFragmentBMI">
+
+    <ImageView
+        android:id="@+id/imageCalculatorBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_margin="@dimen/margin_picture"
+        android:src="@android:drawable/ic_secure" />
+
+    <TextView
+        android:id="@+id/titleBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:fontFamily="serif"
+        android:text="@string/tool_name_BMI"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:fontFamily="serif"
+        android:text="@string/tool_BMI_weight"
+        android:textSize="@dimen/text_medium" />
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorBlueLight"
+        android:ems="10"
+        android:hint="@string/tool_BMI_weight_hint"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/labelHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:fontFamily="serif"
+        android:text="@string/tool_BMI_height"
+        android:textSize="@dimen/text_medium" />
+
+    <EditText
+        android:id="@+id/inputHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorBlueLight"
+        android:ems="10"
+        android:hint="@string/tool_BMI_height_hint"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/labelResultBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/tool_BMI_result"
+        android:textSize="@dimen/text_medium" />
+
+    <EditText
+        android:id="@+id/outputResultBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorBlueLight"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/tool_BMI_result_hint"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/buttonCalculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/tool_BMI_calculate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+
+</GridLayout>

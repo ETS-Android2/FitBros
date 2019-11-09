@@ -2,11 +2,6 @@ package com.example.fitbros;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -38,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_upper_body, R.id.nav_lower_body,
-                R.id.nav_core_muscles, R.id.nav_cardio, R.id.nav_calculator, R.id.nav_credits)
+                R.id.nav_core_muscles, R.id.nav_cardio, R.id.nav_tools, R.id.nav_credits)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
