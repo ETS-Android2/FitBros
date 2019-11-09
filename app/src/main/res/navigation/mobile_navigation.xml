@@ -46,7 +46,7 @@
             app:destination="@id/workoutFragment" />
     </fragment>
     <fragment
-        android:id="@+id/nav_calculator"
+        android:id="@+id/nav_tools"
         android:name="com.example.fitbros.Fragments.ToolFragment"
         android:label="@string/menu_tool"
         tools:layout="@layout/fragment_tool" />
