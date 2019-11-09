@@ -22,7 +22,11 @@
         android:id="@+id/nav_lower_body"
         android:name="com.example.fitbros.Fragments.LowerBodyFragment"
         android:label="@string/menu_lower_body"
-        tools:layout="@layout/fragment_lower_body" />
+        tools:layout="@layout/fragment_lower_body" >
+        <action
+            android:id="@+id/action_nav_lower_body_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_core_muscles"
         android:name="com.example.fitbros.Fragments.CoreFragment"
@@ -46,6 +50,6 @@
     <fragment
         android:id="@+id/workoutFragment"
         android:name="com.example.fitbros.Fragments.WorkoutFragment"
-        android:label="fragment_workout"
+        android:label="Workouts"
         tools:layout="@layout/fragment_workout" />
 </navigation>
