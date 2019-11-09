@@ -33,7 +33,30 @@ public class CardioFragment extends Fragment {
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_cardio, container, false);
 
-        
+        treadmillButton = view.findViewById(R.id.buttonTreadmill);
+        cycleButton = view.findViewById(R.id.buttonCycle);
+        jumpRopeButton = view.findViewById(R.id.buttonJump);
+
+        treadmillButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
+            }
+        });
+
+        cycleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
+            }
+        });
+
+        jumpRopeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
+            }
+        });
 
         return view;
     }
