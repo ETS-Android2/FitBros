@@ -13,7 +13,11 @@
         android:id="@+id/nav_upper_body"
         android:name="com.example.fitbros.Fragments.UpperBodyFragment"
         android:label="@string/menu_upper_body"
-        tools:layout="@layout/fragment_upper_body" />
+        tools:layout="@layout/fragment_upper_body" >
+        <action
+            android:id="@+id/action_nav_upper_body_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_lower_body"
         android:name="com.example.fitbros.Fragments.LowerBodyFragment"
@@ -39,4 +43,9 @@
         android:name="com.example.fitbros.Fragments.CreditsFragment"
         android:label="@string/menu_credits"
         tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.fitbros.Fragments.WorkoutFragment"
+        android:label="fragment_workout"
+        tools:layout="@layout/fragment_workout" />
 </navigation>
