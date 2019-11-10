@@ -49,7 +49,11 @@
         android:id="@+id/nav_tools"
         android:name="com.example.fitbros.Fragments.ToolFragment"
         android:label="@string/menu_tool"
-        tools:layout="@layout/fragment_tool" />
+        tools:layout="@layout/fragment_tool" >
+        <action
+            android:id="@+id/action_nav_tool_to_calculator_bmi"
+            app:destination="@+id/toolFragmentBMI" />
+    </fragment>
     <fragment
         android:id="@+id/nav_credits"
         android:name="com.example.fitbros.Fragments.CreditsFragment"
@@ -60,4 +64,9 @@
         android:name="com.example.fitbros.Fragments.WorkoutFragment"
         android:label="Workouts"
         tools:layout="@layout/fragment_workout" />
+    <fragment
+        android:id="@+id/toolFragmentBMI"
+        android:name="com.example.fitbros.Fragments.ToolFragmentBMI"
+        android:label="@string/tool_name_BMI"
+        tools:layout="@layout/fragment_tool_bmi" />
 </navigation>

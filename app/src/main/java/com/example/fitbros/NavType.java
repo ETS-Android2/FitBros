@@ -6,15 +6,17 @@ public class NavType {
 
     private String name;
     private String description;
+    private int image;
 
     public NavType() {
 
     }
 
-    public NavType(String name, String description) {
+    public NavType(String name, String description, int image) {
 
         this.name = name;
         this.description = description;
+        this.image = image;
 
     }
 
@@ -31,6 +33,14 @@ public class NavType {
 
     public String getDescription() {
         return description;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 
     public void setDescription(String description) {

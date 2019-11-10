@@ -18,4 +18,9 @@
     <!-- Colour set inspired by:
     Source: https://www.mypersonaltrainerwebsite.com/blog/how-to-use-color-psychology-to-create-the-perfect-fitness-website -->
 
+    <!-- BMI Calculator Risk Colours -->
+    <color name="colorRiskGreen">#CCFFEE</color>
+    <color name="colorRiskYellow">#FFFFDD</color>
+    <color name="colorRiskOrange">#FFEEDD</color>
+
 </resources>

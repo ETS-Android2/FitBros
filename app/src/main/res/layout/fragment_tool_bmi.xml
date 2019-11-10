@@ -71,6 +71,23 @@
         android:inputType="numberDecimal"
         android:padding="10dp" />
 
+    <Button
+        android:id="@+id/buttonCalculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/button_BMI_calculate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/labelResultBMI"
         android:layout_width="wrap_content"
@@ -91,21 +108,24 @@
         android:inputType="numberDecimal"
         android:padding="10dp" />
 
-    <Button
-        android:id="@+id/buttonCalculateBMI"
+    <TextView
+        android:id="@+id/labelStatusBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnSpan="2"
+        android:fontFamily="serif"
+        android:text="@string/tool_BMI_status"
+        android:textSize="@dimen/text_medium" />
+
+    <EditText
+        android:id="@+id/outputStatusBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="fill_horizontal"
-        android:layout_marginLeft="@dimen/margin_button"
-        android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
-        android:paddingTop="@dimen/padding_button"
-        android:paddingBottom="@dimen/padding_button"
-        android:text="@string/tool_BMI_calculate"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/text_general"
-        android:textStyle="bold" />
+        android:background="@color/colorBlueLight"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/tool_BMI_status_hint"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
 
 </GridLayout>
