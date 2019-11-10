@@ -8,7 +8,23 @@
         android:id="@+id/nav_home"
         android:name="com.example.fitbros.Fragments.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_tools"
+            app:destination="@id/nav_tools" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_cardio"
+            app:destination="@id/nav_cardio" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_core_muscles"
+            app:destination="@id/nav_core_muscles" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_lower_body"
+            app:destination="@id/nav_lower_body" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_upper_body"
+            app:destination="@id/nav_upper_body" />
+    </fragment>
     <fragment
         android:id="@+id/nav_upper_body"
         android:name="com.example.fitbros.Fragments.UpperBodyFragment"

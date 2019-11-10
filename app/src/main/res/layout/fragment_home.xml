@@ -30,23 +30,4 @@
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2" >
-
-        <TextView
-            android:id="@+id/homeNavDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding_text"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/padding_text"
-            android:paddingRight="@dimen/padding_text"
-            android:text="@string/content_home_welcome"
-            android:textColor="@color/colorTextIndigo"
-            android:textSize="@dimen/text_general" />
-
-    </ScrollView>
-
 </LinearLayout>
