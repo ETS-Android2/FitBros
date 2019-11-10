@@ -1,6 +1,8 @@
 package com.example.fitbros.Fragments;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
@@ -9,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -40,7 +43,7 @@ public class ToolFragmentBMI extends Fragment {
 
 
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_tool_bmi, container, false);
+        final View view = inflater.inflate(R.layout.fragment_tool_bmi, container, false);
 
         userWeight = view.findViewById(R.id.inputWeight);
         userHeight = view.findViewById(R.id.inputHeight);
@@ -52,6 +55,8 @@ public class ToolFragmentBMI extends Fragment {
         clickButtonBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                hideKeyboardFrom(getContext(), view);
+
                 double localWeight;
                 double localHeight;
                 double localResult;
@@ -90,6 +95,11 @@ public class ToolFragmentBMI extends Fragment {
         });
 
         return view;
+    }
+
+    public static void hideKeyboardFrom(Context context, View view) {
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
     // Information for BMI sourced from CDC.gov
