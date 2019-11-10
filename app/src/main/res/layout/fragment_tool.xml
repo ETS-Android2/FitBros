@@ -4,44 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".Fragments.ToolFragment">
 
-    <ImageView
-        android:id="@+id/imageCalculator"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/toolsViewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_picture"
-        android:src="@android:drawable/ic_secure" />
-
-    <Button
-        android:id="@+id/buttonCalculatorBMI"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_button"
-        android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
-        android:paddingTop="@dimen/padding_button"
-        android:paddingBottom="@dimen/padding_button"
-        android:text="@string/submenu_tools_BMI"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/text_general"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/buttonCalculatorRFM"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_button"
-        android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
-        android:paddingTop="@dimen/padding_button"
-        android:paddingBottom="@dimen/padding_button"
-        android:text="@string/submenu_tools_RFM"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/text_general"
-        android:textStyle="bold" />
-
+        android:layout_height="match_parent" />
 </LinearLayout>
