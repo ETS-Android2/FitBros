@@ -8,13 +8,34 @@
     android:useDefaultMargins="true"
     tools:context=".Fragments.ToolFragmentBMI">
 
-    <ImageView
-        android:id="@+id/imageCalculatorBMI"
+    <LinearLayout
+        android:layout_columnSpan="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_columnSpan="2"
-        android:layout_margin="@dimen/margin_picture"
-        android:src="@android:drawable/ic_secure" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageSwipeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_swipe_left_grayblue_24dp" />
+
+        <ImageView
+            android:id="@+id/imageCalculatorBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_secure" />
+
+        <ImageView
+            android:id="@+id/imageSwipeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_swipe_right_grayblue_24dp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/titleBMI"

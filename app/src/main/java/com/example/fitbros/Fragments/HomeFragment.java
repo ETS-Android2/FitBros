@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.renderscript.Element;
 import android.view.LayoutInflater;
@@ -45,8 +46,6 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        navMenuDescription = view.findViewById(R.id.homeNavDescription);
-
         listView = view.findViewById(R.id.homeNavList);
 
         final ArrayList<NavType> navTypes = new ArrayList<>();
@@ -70,7 +69,23 @@ public class HomeFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                navMenuDescription.setText(navTypes.get(position).getDescription());
+                switch (position) {
+                    case 0:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_upper_body);
+                        break;
+                    case 1:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_lower_body);
+                        break;
+                    case 2:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_core_muscles);
+                        break;
+                    case 3:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_cardio);
+                        break;
+                    case 4:
+                        Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_tools);
+                        break;
+                }
             }
         });
 
