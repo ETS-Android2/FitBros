@@ -59,7 +59,9 @@
     <string name="tool_BMI_height_hint">height in inches</string>
     <string name="tool_BMI_result">Result</string>
     <string name="tool_BMI_result_hint">your result</string>
-    <string name="tool_BMI_calculate">Calculate</string>
+    <string name="tool_BMI_status">Status</string>
+    <string name="tool_BMI_status_hint">your weight status</string>
+    <string name="button_BMI_calculate">Calculate</string>
     <string name="description_BMI">Content BMI</string>
 
     <!-- Tool content: RFM -->
