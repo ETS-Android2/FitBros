@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Fragments.UpperBodyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imageUpperBody"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_picture"
+        android:src="@android:drawable/ic_secure" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/buttonBicep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/submenu_upper_bicep"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonTricep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:layout_marginBottom="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/submenu_upper_tricep"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonChest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@color/colorBlueMedium"
+        android:paddingTop="@dimen/padding_button"
+        android:paddingBottom="@dimen/padding_button"
+        android:text="@string/submenu_upper_chest"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_general"
+        android:textStyle="bold" />
+</LinearLayout>

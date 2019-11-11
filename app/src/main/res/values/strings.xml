@@ -17,12 +17,54 @@
     <string name="menu_lower_body">Lower Body</string>
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
-    <string name="menu_tool">Tool</string>
+    <string name="menu_cardio_long">Cardio Workout</string>
+    <string name="menu_tool">Tools &amp; Calculators</string>
     <string name="menu_credits">Credits</string>
 
     <!-- sub-navigation titles -->
+    <string name="submenu_upper_bicep">Bicep</string>
+    <string name="submenu_upper_tricep">Tricep</string>
+    <string name="submenu_upper_chest">Chest</string>
+    <string name="submenu_lower_quad">Quads</string>
+    <string name="submenu_lower_hamstring">Hamstrings</string>
+    <string name="submenu_lower_calves">Calves</string>
+    <string name="submenu_core_abs">Abdominals</string>
+    <string name="submenu_core_obliques">Obliques</string>
+    <string name="submenu_core_glutes">Glutes</string>
     <string name="submenu_cardio_treadmill">Treadmill</string>
     <string name="submenu_cardio_cycle">Cycle</string>
     <string name="submenu_cardio_jump">Jump Rope</string>
+    <string name="submenu_tools_BMI">BMI: Body Mass Index</string>
+    <string name="submenu_tools_BMI_short">BMI Calculator</string>
+    <string name="submenu_tools_RFM">RFM: Relative Fat Mass Index</string>
+    <string name="submenu_tools_RFM_short">RFM Calculator</string>
+
+    <!-- content -->
+    <string name="content_home_welcome">Content</string>
+    <string name="content_tools_info_BMI">Content</string>
+    <string name="content_tools_info_RFM">Content</string>
+
+    <!-- ListView content -->
+    <string name="description_upper_body">Content Upper Body</string>
+    <string name="description_lower_body">Content Lower Body</string>
+    <string name="description_core_muscles">Content Core Muscles</string>
+    <string name="description_cardio">Content Cardio</string>
+    <string name="description_tools">Content Tools</string>
+
+    <!-- Tool content: BMI -->
+    <string name="tool_name_BMI">BMI Calculator</string>
+    <string name="tool_BMI_weight">Weight</string>
+    <string name="tool_BMI_weight_hint">weight in lbs</string>
+    <string name="tool_BMI_height">Height</string>
+    <string name="tool_BMI_height_hint">height in inches</string>
+    <string name="tool_BMI_result">Result</string>
+    <string name="tool_BMI_result_hint">your result</string>
+    <string name="tool_BMI_status">Status</string>
+    <string name="tool_BMI_status_hint">your weight status</string>
+    <string name="button_BMI_calculate">Calculate</string>
+    <string name="description_BMI">Content BMI</string>
+
+    <!-- Tool content: RFM -->
+    <string name="description_RFM">Content RFM</string>
 
 </resources>
