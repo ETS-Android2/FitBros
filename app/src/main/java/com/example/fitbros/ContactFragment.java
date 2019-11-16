@@ -26,6 +26,7 @@ public class ContactFragment extends Fragment {
 
     Button emailButton;
     Button smsButton;
+    Button phoneButton;
 
     public static String[] emailList = {"w0721766@myscc.ca"};
     public static final int PERMISSION_SEND_SMS = 1;
@@ -42,6 +43,7 @@ public class ContactFragment extends Fragment {
 
         emailButton = view.findViewById(R.id.emailButton);
         smsButton = view.findViewById(R.id.smsButton);
+        phoneButton = view.findViewById(R.id.phoneButton);
 
         emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +83,15 @@ public class ContactFragment extends Fragment {
                     intent.putExtra("sms_body", "I am having troubles with the following:");
                     startActivity(intent);
                 }
+            }
+        });
+
+        phoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:5191234567"));
+                startActivity(intent);
             }
         });
 
