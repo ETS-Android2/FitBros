@@ -59,7 +59,14 @@ public class Tool_IntentsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                // TODO
+                String tweet = String.format("https://twitter.com/intent/tweet?text=%s", ("I%27m+at+the+gym.+%23fitbros"));
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(tweet));
+
+                // ensure that there is twitter functionality
+                if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
+                    startActivity(intent);
+                }
 
             }
         });
