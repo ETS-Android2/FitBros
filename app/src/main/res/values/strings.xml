@@ -67,4 +67,10 @@
     <!-- Tool content: RFM -->
     <string name="description_RFM">Content RFM</string>
 
+    <!-- Tool content: Intents -->
+    <string name="button_tool_alarm">Set workout alarm</string>
+    <string name="button_tool_twitter">Tweet your workout</string>
+    <string name="button_tool_gym_map">Find a gym</string>
+    <string name="button_tool_fit_tips">Fit Tips</string>
+
 </resources>

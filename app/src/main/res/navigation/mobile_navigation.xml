@@ -82,7 +82,7 @@
         tools:layout="@layout/fragment_workout" />
     <fragment
         android:id="@+id/toolFragmentBMI"
-        android:name="com.example.fitbros.Fragments.ToolFragmentBMI"
+        android:name="com.example.fitbros.Fragments.Tool_BMIFragment"
         android:label="@string/tool_name_BMI"
         tools:layout="@layout/fragment_tool_bmi" />
     <fragment
