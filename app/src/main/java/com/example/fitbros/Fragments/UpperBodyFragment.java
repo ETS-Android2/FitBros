@@ -4,21 +4,15 @@ package com.example.fitbros.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 
 import com.example.fitbros.Constants;
-import com.example.fitbros.NavType;
 import com.example.fitbros.R;
-
-import java.util.ArrayList;
 
 
 /**

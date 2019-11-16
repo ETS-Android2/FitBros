@@ -1,5 +1,7 @@
 package com.example.fitbros;
 
+import com.example.fitbros.JavaBeans.Workout;
+
 import java.util.ArrayList;
 
 public class Constants {

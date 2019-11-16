@@ -1,4 +1,4 @@
-package com.example.fitbros;
+package com.example.fitbros.JavaBeans;
 
 public class NavType {
 
