@@ -28,13 +28,15 @@
 
     <item android:title="@string/nav_drawer_subtitle">
         <menu>
-            <item
-                android:id="@+id/nav_contact"
-                android:title="Contact Us" />
+
             <item
                 android:id="@+id/nav_tools"
                 android:icon="@drawable/ic_calculator_grayblue_24dp"
                 android:title="@string/menu_tool" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact_us_grayblue_24dp"
+                android:title="@string/menu_contacts" />
             <item
                 android:id="@+id/nav_credits"
                 android:icon="@drawable/ic_credits_grayblue_24dp"

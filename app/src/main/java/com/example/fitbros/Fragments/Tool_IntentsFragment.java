@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.fitbros.R;
 
@@ -51,6 +52,8 @@ public class Tool_IntentsFragment extends Fragment {
                 // ensure that there is alarm functionality
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
+                } else {
+                    Toast.makeText(getContext(), "Please install alarm to complete task.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -66,6 +69,8 @@ public class Tool_IntentsFragment extends Fragment {
                 // ensure that there is twitter functionality
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
+                } else {
+                    Toast.makeText(getContext(), "Please install Twitter and login to complete task.", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -84,6 +89,8 @@ public class Tool_IntentsFragment extends Fragment {
                 // ensure that there is map functionality
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
+                } else {
+                    Toast.makeText(getContext(), "Please install Google Maps to complete task.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -99,7 +106,8 @@ public class Tool_IntentsFragment extends Fragment {
                 // ensure that there is web functionality
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
-
+                } else {
+                    Toast.makeText(getContext(), "No software installed to complete task.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
