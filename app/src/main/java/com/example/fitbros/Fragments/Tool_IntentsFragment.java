@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.provider.AlarmClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,8 +41,17 @@ public class Tool_IntentsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                // TODO
+                String alarmMessage = "Time to go to the gym!";
 
+                Intent intent = new Intent (AlarmClock.ACTION_SET_ALARM)
+                        .putExtra(AlarmClock.EXTRA_MESSAGE, alarmMessage)
+                        .putExtra(AlarmClock.EXTRA_HOUR, 17)
+                        .putExtra(AlarmClock.EXTRA_MINUTES,30);
+
+                // ensure that there is alarm functionality
+                if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
+                    startActivity(intent);
+                }
             }
         });
 
