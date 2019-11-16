@@ -78,7 +78,6 @@ public class Tool_IntentsFragment extends Fragment {
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
                 }
-
             }
         });
 
@@ -86,8 +85,15 @@ public class Tool_IntentsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                // TODO
+                Uri webpage = Uri.parse("https://www.instagram.com/bespoketreatments/");
 
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+
+                // ensure that there is web functionality
+                if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
+                    startActivity(intent);
+
+                }
             }
         });
 
