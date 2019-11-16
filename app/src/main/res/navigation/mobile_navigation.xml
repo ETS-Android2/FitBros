@@ -78,11 +78,16 @@
     <fragment
         android:id="@+id/workoutFragment"
         android:name="com.example.fitbros.Fragments.WorkoutFragment"
-        android:label="Workouts"
+        android:label="@string/menu_workouts"
         tools:layout="@layout/fragment_workout" />
     <fragment
         android:id="@+id/toolFragmentBMI"
-        android:name="com.example.fitbros.Fragments.ToolFragmentBMI"
+        android:name="com.example.fitbros.Fragments.Tool_BMIFragment"
         android:label="@string/tool_name_BMI"
         tools:layout="@layout/fragment_tool_bmi" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.fitbros.Fragments.ContactFragment"
+        android:label="@string/menu_contacts"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:columnCount="2"
     android:useDefaultMargins="true"
-    tools:context=".Fragments.ToolFragmentBMI">
+    tools:context=".Fragments.Tool_BMIFragment">
 
     <LinearLayout
         android:layout_columnSpan="2"

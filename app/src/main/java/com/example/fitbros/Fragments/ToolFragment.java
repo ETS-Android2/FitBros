@@ -6,7 +6,6 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.navigation.Navigation;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
@@ -51,18 +50,16 @@ public class ToolFragment extends Fragment {
         @Override
         public Fragment getItem(int position) {
             switch(position) {
-                case 0: return new ToolFragmentBMI();
-                case 1: return new ToolFragmentBMI();
-                case 2: return new ToolFragmentBMI();
-                case 3: return new ToolFragmentBMI();
-                case 4: return new ToolFragmentBMI();
-                default: return new ToolFragmentBMI();
+                case 0: return new Tool_IntentsFragment();
+                case 1: return new Tool_BMIFragment();
+                case 2: return new Tool_BMIFragment();
+                default: return new Tool_IntentsFragment();
             }
         }
 
         @Override
         public int getCount() {
-            return 5;
+            return 3;
         }
     }
 

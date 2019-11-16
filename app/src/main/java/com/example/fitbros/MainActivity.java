@@ -1,12 +1,19 @@
 package com.example.fitbros;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.fitbros.Fragments.ContactFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -14,7 +21,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.DisplayMetrics;
 import android.view.Menu;
+import android.view.MenuItem;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Change app language from menu item
+        setAppLocale("en");
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -33,12 +48,20 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_upper_body, R.id.nav_lower_body,
-                R.id.nav_core_muscles, R.id.nav_cardio, R.id.nav_tools, R.id.nav_credits)
+                R.id.nav_core_muscles, R.id.nav_cardio, R.id.nav_tools, R.id.nav_contact, R.id.nav_credits)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
+
+    private void setAppLocale(String localeCode) {
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration config = res.getConfiguration();
+        config.setLocale(new Locale(localeCode));
+        res.updateConfiguration(config, dm);
     }
 
     @Override
@@ -49,9 +72,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.action_settings:
+                Intent i = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(i);
+            break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch(requestCode) {
+            case ContactFragment.PERMISSION_SEND_SMS:
+                if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Intent intent = new Intent(Intent.ACTION_SENDTO);
+                    intent.setData(Uri.parse("smsto:5191234567"));
+                    intent.putExtra("sms_body", "I am having troubles with the following:");
+                    startActivity(intent);
+                }
+                break;
+        }
     }
 }
