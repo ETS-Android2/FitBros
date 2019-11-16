@@ -20,6 +20,8 @@
     <string name="menu_cardio_long">Cardio Workout</string>
     <string name="menu_tool">Tools &amp; Calculators</string>
     <string name="menu_credits">Credits</string>
+    <string name="menu_contacts">Contact Us</string>
+    <string name="menu_workouts">Workouts</string>
 
     <!-- sub-navigation titles -->
     <string name="submenu_upper_bicep">Bicep</string>
@@ -66,5 +68,16 @@
 
     <!-- Tool content: RFM -->
     <string name="description_RFM">Content RFM</string>
+
+    <!-- Tool content: Intents -->
+    <string name="button_tool_alarm">Set workout alarm</string>
+    <string name="button_tool_twitter">Tweet your workout</string>
+    <string name="button_tool_gym_map">Find a gym</string>
+    <string name="button_tool_fit_tips">Fit Tips</string>
+
+    <!-- Contact content -->
+    <string name="button_contact_email">Email</string>
+    <string name="button_contact_text">Text</string>
+    <string name="button_contact_phone">Phone</string>
 
 </resources>

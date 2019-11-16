@@ -19,11 +19,10 @@ import com.example.fitbros.R;
 
 import java.text.DecimalFormat;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ToolFragmentBMI extends Fragment {
+public class Tool_BMIFragment extends Fragment {
 
     // create variables for the xml elements
     EditText userWeight;
@@ -31,16 +30,13 @@ public class ToolFragmentBMI extends Fragment {
     EditText resultBMI;
     EditText weightStatus;
 
-    public ToolFragmentBMI() {
+    public Tool_BMIFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
 
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_tool_bmi, container, false);
