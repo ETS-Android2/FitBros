@@ -43,6 +43,17 @@ public class ContactFragment extends Fragment {
         emailButton = view.findViewById(R.id.emailButton);
         smsButton = view.findViewById(R.id.smsButton);
 
+        emailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:"));
+                intent.putExtra(Intent.EXTRA_EMAIL, emailList);
+                intent.putExtra(Intent.EXTRA_TEXT, "I would like to report an issue with the following:");
+                startActivity(intent);
+            }
+        });
+
         smsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
