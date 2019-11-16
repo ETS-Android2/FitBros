@@ -1,7 +1,11 @@
 package com.example.fitbros;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_upper_body, R.id.nav_lower_body,
-                R.id.nav_core_muscles, R.id.nav_cardio, R.id.nav_tools, R.id.nav_credits)
+                R.id.nav_core_muscles, R.id.nav_cardio, R.id.nav_contact, R.id.nav_tools, R.id.nav_credits)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -53,5 +57,19 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch(requestCode) {
+            case ContactFragment.PERMISSION_SEND_SMS:
+                if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Intent intent = new Intent(Intent.ACTION_SENDTO);
+                    intent.setData(Uri.parse("smsto:5191234567"));
+                    intent.putExtra("sms_body", "I am having troubles with the following:");
+                    startActivity(intent);
+                }
+                break;
+        }
     }
 }
