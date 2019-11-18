@@ -2,6 +2,7 @@ package com.example.fitbros.Fragments;
 
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +36,10 @@ public class HomeFragment extends Fragment {
     TextView navMenuDescription;
     ListView listView;
 
+    // Link to the menu: Part 1
+    TextView usernameChange;
+    SharedPreferences sharedPreferences;
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -44,6 +50,11 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Link to the menu: Part 2
+        usernameChange = view.findViewById(R.id.usernameHome);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        usernameChange.setText(sharedPreferences.getString("username", String.valueOf(R.string.preference_name_placeholder)));
 
         listView = view.findViewById(R.id.homeNavList);
 
