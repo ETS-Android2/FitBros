@@ -74,10 +74,23 @@
     <string name="button_tool_twitter">Tweet your workout</string>
     <string name="button_tool_gym_map">Find a gym</string>
     <string name="button_tool_fit_tips">Fit Tips</string>
+    <string name="error_alarm">Please install alarm to complete task.</string>
+    <string name="error_twitter">Please install Twitter and login to complete task.</string>
+    <string name="error_maps">Please install Google Maps to complete task.</string>
+    <string name="error_web">No software installed to complete task.</string>
+    <string name="tool_alarm_message">Time to go to the gym!</string>
+    <string name="tool_twitter_message">I%27m+at+the+gym.+%23fitbros</string>
 
     <!-- Contact content -->
     <string name="button_contact_email">Email</string>
     <string name="button_contact_text">Text</string>
     <string name="button_contact_phone">Phone</string>
+
+    <!-- Shared preferences -->
+    <string name="preference_name_title">Your Name</string>
+    <string name="preference_name_placeholder">FitBro</string>
+    <string name="preference_name_message">Customize this app with your name</string>
+    <string name="preference_language_title">Language</string>
+    <string name="preference_language_message">Select your preferred language</string>
 
 </resources>
