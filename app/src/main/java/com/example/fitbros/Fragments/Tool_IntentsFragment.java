@@ -38,14 +38,17 @@ public class Tool_IntentsFragment extends Fragment {
         mapButton = view.findViewById(R.id.buttonGymFinder);
         webButton = view.findViewById(R.id.buttonGymFitTips);
 
+
+
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                int alarmMessage = R.string.tool_alarm_message;
+                // CODE CHECKPOINT
+                // Toast.makeText(getContext(), R.string.error_alarm, Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent (AlarmClock.ACTION_SET_ALARM)
-                        .putExtra(AlarmClock.EXTRA_MESSAGE, alarmMessage)
+                        .putExtra(AlarmClock.EXTRA_MESSAGE, getResources().getString(R.string.tool_alarm_message))
                         .putExtra(AlarmClock.EXTRA_HOUR, 17)
                         .putExtra(AlarmClock.EXTRA_MINUTES,30);
 
@@ -55,6 +58,7 @@ public class Tool_IntentsFragment extends Fragment {
                 } else {
                     Toast.makeText(getContext(), R.string.error_alarm, Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
@@ -62,7 +66,7 @@ public class Tool_IntentsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                String tweet = String.format("https://twitter.com/intent/tweet?text=%s", (R.string.tool_twitter_message));
+                String tweet = String.format("https://twitter.com/intent/tweet?text=%s", getResources().getString(R.string.tool_twitter_message));
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(tweet));
 
