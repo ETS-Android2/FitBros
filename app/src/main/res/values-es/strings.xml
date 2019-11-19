@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="action_settings">ajustes aplicados</string>
+    <string name="button_BMI_calculate">calcular</string>
+    <string name="button_contact_email">correo electrónico</string>
+    <string name="button_contact_phone">teléfono</string>
+    <string name="button_contact_text">mensaje de texto</string>
+    <string name="button_tool_alarm">ajustar alarma</string>
+    <string name="button_tool_fit_tips">consejos de fitness</string>
+    <string name="button_tool_gym_map">encuentra un gimnasio</string>
+    <string name="button_tool_twitter">tweet tu entrenamiento</string>
+    <string name="content_home_welcome">TODO Content Spanish</string>
+    <string name="content_tools_info_BMI">TODO Content Spanish</string>
+    <string name="content_tools_info_RFM">TODO Content Spanish</string>
+    <string name="description_BMI">TODO Content Spanish</string>
+    <string name="description_RFM">TODO Content Spanish</string>
+    <string name="description_cardio">TODO Content Spanish</string>
+    <string name="description_core_muscles">TODO Content Spanish</string>
+    <string name="description_lower_body">TODO Content Spanish</string>
+    <string name="description_tools">TODO Content Spanish</string>
+    <string name="description_upper_body">TODO Content Spanish</string>
+    <string name="error_alarm">Instale la alarma para completar la tarea.</string>
+    <string name="error_email">Instale Twitter e inicie sesión para completar la tarea.</string>
+    <string name="error_maps">Instala Google Maps para completar la tarea.</string>
+    <string name="error_phone">Instale un software que le brinde servicios telefónicos.</string>
+    <string name="error_sms">Instale software que le brinde servicios de mensajes de texto.</string>
+    <string name="error_twitter">Instale Twitter e inicie sesión para completar la tarea.</string>
+    <string name="error_web">Instale software para acceder a la web.</string>
+    <string name="hello_blank_fragment">Hello blank Spanish fragment</string>
+    <string name="menu_cardio">cardio</string>
+    <string name="menu_cardio_long">entrenamiento cardio</string>
+    <string name="menu_contacts">apoyo técnico</string>
+    <string name="menu_core_muscles">músculos centrales</string>
+    <string name="menu_credits">créditos</string>
+    <string name="menu_home">pantalla de inicio</string>
+    <string name="menu_lower_body">cuerpo inferior</string>
+    <string name="menu_upper_body">parte superior del cuerpo</string>
+    <string name="menu_workouts">entrenamientos</string>
+    <string name="menu_tool">herramientas y calculadoras</string>
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FitBros</string>
+    <string name="app_name" translatable="false">FitBros</string>
     <string name="nav_header_title">FitBros Workout Buddy</string>
     <string name="nav_header_subtitle">Strong Hearts. Strong Body.</string>
     <string name="nav_drawer_subtitle">FitBros Extras</string>
@@ -9,7 +9,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank English fragment</string>
 
     <!-- navigation titles -->
     <string name="menu_home">Home</string>
@@ -18,7 +18,7 @@
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
     <string name="menu_cardio_long">Cardio Workout</string>
-    <string name="menu_tool">Tools &amp; Calculators</string>
+    <string name="menu_tool">Tools &#38; Calculators</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_contacts">Tech Support</string>
     <string name="menu_workouts">Workouts</string>
@@ -42,9 +42,9 @@
     <string name="submenu_tools_RFM_short">RFM Calculator</string>
 
     <!-- content -->
-    <string name="content_home_welcome">Content</string>
-    <string name="content_tools_info_BMI">Content</string>
-    <string name="content_tools_info_RFM">Content</string>
+    <string name="content_home_welcome">TODO Content English</string>
+    <string name="content_tools_info_BMI">TODO Content English</string>
+    <string name="content_tools_info_RFM">TODO Content English</string>
 
     <!-- ListView content -->
     <string name="description_upper_body">Content Upper Body</string>
