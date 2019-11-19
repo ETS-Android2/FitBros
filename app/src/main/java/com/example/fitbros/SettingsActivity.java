@@ -46,6 +46,18 @@ public class SettingsActivity extends AppCompatActivity {
                     return true;
                 }
             });
+
+            final EditTextPreference editTextPreference = (EditTextPreference) findPreference("userName");
+
+            editTextPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+
+                    return true;
+                }
+            });
         }
     }
 }
