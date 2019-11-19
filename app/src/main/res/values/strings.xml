@@ -20,7 +20,7 @@
     <string name="menu_cardio_long">Cardio Workout</string>
     <string name="menu_tool">Tools &amp; Calculators</string>
     <string name="menu_credits">Credits</string>
-    <string name="menu_contacts">Contact Us</string>
+    <string name="menu_contacts">Tech Support</string>
     <string name="menu_workouts">Workouts</string>
 
     <!-- sub-navigation titles -->
@@ -77,14 +77,21 @@
     <string name="error_alarm">Please install alarm to complete task.</string>
     <string name="error_twitter">Please install Twitter and login to complete task.</string>
     <string name="error_maps">Please install Google Maps to complete task.</string>
-    <string name="error_web">No software installed to complete task.</string>
+    <string name="error_web">Please install software to access the web.</string>
     <string name="tool_alarm_message">Time to go to the gym!</string>
     <string name="tool_twitter_message">I%27m+at+the+gym.+%23fitbros</string>
 
-    <!-- Contact content -->
+    <!-- Contact content: Intents -->
     <string name="button_contact_email">Email</string>
     <string name="button_contact_text">Text</string>
     <string name="button_contact_phone">Phone</string>
+    <string name="error_email">Please install Twitter and login to complete task.</string>
+    <string name="error_sms">Please install software that provides you with texting services.</string>
+    <string name="error_phone">Please install software that provides you with telephone services.</string>
+    <string name="permission_sms">We need to access your texting services to be able to send an SMS message.</string>
+    <string name="tech_support_email_subject">Attn: Tech Support for the FitBros App</string>
+    <string name="tech_support_email_body_text">Hi FitBros. I would like to report an issue with the following: </string>
+    <string name="tech_support_sms_message">Hi FitBros. I am having troubles with the following: </string>
 
     <!-- Shared preferences -->
     <string name="preference_name_title">Your Name</string>

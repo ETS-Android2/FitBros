@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
         // Link to the menu: Part 2
         usernameChange = view.findViewById(R.id.usernameHome);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        usernameChange.setText(sharedPreferences.getString("username", String.valueOf(R.string.preference_name_placeholder)));
+        usernameChange.setText(sharedPreferences.getString("userName", getResources().getString(R.string.preference_name_placeholder)));
 
         listView = view.findViewById(R.id.homeNavList);
 
