@@ -12,9 +12,9 @@
     <string name="hello_blank_fragment">Hello blank English fragment</string>
 
     <!-- Home greeting messages -->
-    <string name="home_greeting_morning">Good morning, </string>
-    <string name="home_greeting_afternoon">Good afternoon, </string>
-    <string name="home_greeting_evening">Good evening, </string>
+    <string name="home_greeting_morning">Good morning,&#160;</string>
+    <string name="home_greeting_afternoon">Good afternoon,&#160;</string>
+    <string name="home_greeting_evening">Good evening,&#160;</string>
 
     <!-- navigation titles -->
     <string name="menu_home">Home</string>
@@ -95,8 +95,8 @@
     <string name="error_phone">Please install software that provides you with telephone services.</string>
     <string name="permission_sms">We need to access your texting services to be able to send an SMS message.</string>
     <string name="tech_support_email_subject">Attn: Tech Support for the FitBros App</string>
-    <string name="tech_support_email_body_text">Hi FitBros. I would like to report an issue with the following: </string>
-    <string name="tech_support_sms_message">Hi FitBros. I am having troubles with the following: </string>
+    <string name="tech_support_email_body_text">Hi FitBros. I would like to report an issue with the following:&#160;</string>
+    <string name="tech_support_sms_message">Hi FitBros. I am having troubles with the following:&#160;</string>
 
     <!-- Shared preferences -->
     <string name="preference_name_title">Your Name</string>
@@ -104,5 +104,7 @@
     <string name="preference_name_message">Customize this app with your name</string>
     <string name="preference_language_title">Language</string>
     <string name="preference_language_message">Select your preferred language</string>
+    <string name="preference_language_english" translatable="false">English</string>
+    <string name="preference_language_spanish" translatable="false">Español</string>
 
 </resources>
