@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
@@ -37,6 +38,18 @@ public class SettingsActivity extends AppCompatActivity {
             final ListPreference listPreference = (ListPreference) findPreference("lang");
 
             listPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+
+                    return true;
+                }
+            });
+
+            final EditTextPreference editTextPreference = (EditTextPreference) findPreference("userName");
+
+            editTextPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     Intent intent = new Intent(getActivity(), MainActivity.class);
