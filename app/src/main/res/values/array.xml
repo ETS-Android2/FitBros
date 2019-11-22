@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="language_menu">
         <item>@string/preference_language_english</item>
         <item>@string/preference_language_spanish</item>
@@ -8,4 +9,17 @@
         <item>en</item>
         <item>es</item>
     </string-array>
+
+    <string-array name="measurement_menu">
+
+        <!-- TODO 3: externalize -->
+        <item>Metric</item>
+        <item>Imperial</item>
+
+    </string-array>
+    <string-array name="measurement_values">
+        <item>us</item>
+        <item>eu</item>
+    </string-array>
+
 </resources>

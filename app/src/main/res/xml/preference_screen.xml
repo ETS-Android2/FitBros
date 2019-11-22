@@ -15,4 +15,13 @@
         android:key="lang"
         android:summary="@string/preference_language_message"
         android:title="@string/preference_language_title" />
+
+    <!-- TODO 1: externalize -->
+    <ListPreference
+        android:defaultValue="imperial"
+        android:entries="@array/measurement_menu"
+        android:entryValues="@array/measurement_values"
+        android:key="measure"
+        android:summary="Choose between metric and imperial measures"
+        android:title="Measurement" />
 </PreferenceScreen>
