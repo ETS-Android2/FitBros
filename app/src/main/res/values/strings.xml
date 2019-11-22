@@ -11,6 +11,11 @@
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank English fragment</string>
 
+    <!-- Home greeting messages -->
+    <string name="home_greeting_morning">Good morning, </string>
+    <string name="home_greeting_afternoon">Good afternoon, </string>
+    <string name="home_greeting_evening">Good evening, </string>
+
     <!-- navigation titles -->
     <string name="menu_home">Home</string>
     <string name="menu_upper_body">Upper Body</string>

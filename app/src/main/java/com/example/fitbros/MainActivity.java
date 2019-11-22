@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     Intent intent = new Intent(Intent.ACTION_SENDTO);
                     intent.setData(Uri.parse("smsto:5191234567"));
-                    intent.putExtra("sms_body", "I am having troubles with the following:");
+                    intent.putExtra("sms_body", getResources().getString(R.string.tech_support_sms_message));
                     startActivity(intent);
                 }
                 break;
