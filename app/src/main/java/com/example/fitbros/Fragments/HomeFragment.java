@@ -24,6 +24,9 @@ import com.example.fitbros.JavaBeans.NavType;
 import com.example.fitbros.R;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 
 /**
@@ -40,6 +43,7 @@ public class HomeFragment extends Fragment {
     TextView usernameChange;
     SharedPreferences sharedPreferences;
 
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -54,7 +58,26 @@ public class HomeFragment extends Fragment {
         // Link to the menu: Part 2
         usernameChange = view.findViewById(R.id.usernameHome);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        usernameChange.setText(sharedPreferences.getString("userName", getResources().getString(R.string.preference_name_placeholder)));
+        String newUsername = sharedPreferences.getString("userName", getResources().getString(R.string.preference_name_placeholder));
+
+        Date date = new Date();
+        Calendar calendar = GregorianCalendar.getInstance();
+        calendar.setTime(date);
+        int time = calendar.get(Calendar.HOUR_OF_DAY);
+
+        String message = "";
+
+        if(time < 12) {
+            message = "Good morning, ";
+        }
+        else if(time > 17) {
+            message = "Good evening, ";
+        }
+        else {
+            message = "Good afternoon, ";
+        }
+
+        usernameChange.setText(message + newUsername);
 
         listView = view.findViewById(R.id.homeNavList);
 
