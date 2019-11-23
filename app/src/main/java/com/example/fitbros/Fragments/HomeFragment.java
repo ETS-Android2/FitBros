@@ -68,13 +68,13 @@ public class HomeFragment extends Fragment {
         String message = "";
 
         if(time < 12) {
-            message = "Good morning, ";
+            message = getResources().getString(R.string.home_greeting_morning);
         }
         else if(time > 17) {
-            message = "Good evening, ";
+            message = getResources().getString(R.string.home_greeting_evening);
         }
         else {
-            message = "Good afternoon, ";
+            message = getResources().getString(R.string.home_greeting_afternoon);
         }
 
         usernameChange.setText(message + newUsername);

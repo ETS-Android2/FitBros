@@ -35,9 +35,10 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preference_screen);
 
-            final ListPreference listPreference = (ListPreference) findPreference("lang");
+            // Menu Option #1: User Name
+            final EditTextPreference editTextPreference = (EditTextPreference) findPreference("userName");
 
-            listPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            editTextPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     Intent intent = new Intent(getActivity(), MainActivity.class);
@@ -47,9 +48,23 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             });
 
-            final EditTextPreference editTextPreference = (EditTextPreference) findPreference("userName");
+            // Menu Option #2: Language
+            final ListPreference languagePreference = (ListPreference) findPreference("lang");
 
-            editTextPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            languagePreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+
+                    return true;
+                }
+            });
+
+            // Menu Option #3: Measurement
+            final ListPreference measurementPreference = (ListPreference) findPreference("measure");
+
+            measurementPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     Intent intent = new Intent(getActivity(), MainActivity.class);

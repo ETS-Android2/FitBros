@@ -8,4 +8,9 @@ public class Constants {
 
     public static ArrayList<Workout> workouts = new ArrayList<>();
 
+    // Menu Option: Measurement
+    public static final String MEASUREMENT_IMPERIAL = "us";
+    public static final String MEASUREMENT_METRIC = "eu";
+
+
 }

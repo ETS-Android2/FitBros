@@ -3,11 +3,13 @@ package com.example.fitbros.Fragments;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.fitbros.Constants;
 import com.example.fitbros.R;
 
 import java.text.DecimalFormat;
@@ -29,6 +32,10 @@ public class Tool_BMIFragment extends Fragment {
     EditText userHeight;
     EditText resultBMI;
     EditText weightStatus;
+
+    // Link to menu (Part 1)
+    SharedPreferences sharedPreferences;
+    String measurement;
 
     public Tool_BMIFragment() {
         // Required empty public constructor
@@ -46,6 +53,10 @@ public class Tool_BMIFragment extends Fragment {
         resultBMI = view.findViewById(R.id.outputResultBMI);
         weightStatus = view.findViewById(R.id.outputStatusBMI);
 
+        // Link to menu (Part 2)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        measurement = sharedPreferences.getString("measure", Constants.MEASUREMENT_IMPERIAL);
+
         Button clickButtonBMI = (Button) view.findViewById(R.id.buttonCalculateBMI);
 
         clickButtonBMI.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +72,16 @@ public class Tool_BMIFragment extends Fragment {
 
                 localWeight = Double.parseDouble(userWeight.getText().toString());
                 localHeight = Double.parseDouble(userHeight.getText().toString());
-                localResult = 703 * localWeight / (localHeight * localHeight);
+
+                // check for user preference of metric or imperial
+                if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
+                    localResult = 703 * localWeight / (localHeight * localHeight);
+                } else {
+
+                    // TODO 2: add imperial and imperial hints
+                    localResult = localWeight / (localHeight * localHeight);
+
+                }
 
                 // format result to include trailing 0 if .0
                 String formattedResult = String.format("%.1f", localResult);
