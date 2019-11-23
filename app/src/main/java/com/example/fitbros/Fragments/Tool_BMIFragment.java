@@ -57,6 +57,16 @@ public class Tool_BMIFragment extends Fragment {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         measurement = sharedPreferences.getString("measure", Constants.MEASUREMENT_IMPERIAL);
 
+        // Change placeholders for weight and height according to menu preference
+        if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
+            userWeight.setHint(getResources().getString(R.string.tool_BMI_weight_hint));
+            userHeight.setHint(getResources().getString(R.string.tool_BMI_height_hint));
+
+        } else {
+            userWeight.setHint(getResources().getString(R.string.tool_BMI_weight_hint_metric));
+            userHeight.setHint(getResources().getString(R.string.tool_BMI_height_hint_metric));
+        }
+
         Button clickButtonBMI = (Button) view.findViewById(R.id.buttonCalculateBMI);
 
         clickButtonBMI.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +76,7 @@ public class Tool_BMIFragment extends Fragment {
 
                 double localWeight;
                 double localHeight;
-                double localResult;
+                double localResult = 0;
                 String localStatus;
                 int colorRisk=0;
 
@@ -76,11 +86,9 @@ public class Tool_BMIFragment extends Fragment {
                 // check for user preference of metric or imperial
                 if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
                     localResult = 703 * localWeight / (localHeight * localHeight);
+
                 } else {
-
-                    // TODO 2: add imperial and imperial hints
-                    localResult = localWeight / (localHeight * localHeight);
-
+                    localResult = localWeight / ((localHeight/100) * (localHeight/100));
                 }
 
                 // format result to include trailing 0 if .0
@@ -120,9 +128,5 @@ public class Tool_BMIFragment extends Fragment {
 
     // Information for BMI sourced from CDC.gov
     // BMI Interpretation: https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html#InterpretedAdults
-
-    public void calculateImperial() {
-
-    }
 
 }
