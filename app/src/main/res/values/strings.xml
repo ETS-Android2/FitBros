@@ -62,8 +62,10 @@
     <string name="tool_name_BMI">BMI Calculator</string>
     <string name="tool_BMI_weight">Weight</string>
     <string name="tool_BMI_weight_hint">weight in lbs</string>
+    <string name="tool_BMI_weight_hint_metric">weight in kg</string>
     <string name="tool_BMI_height">Height</string>
     <string name="tool_BMI_height_hint">height in inches</string>
+    <string name="tool_BMI_height_hint_metric">height in cm</string>
     <string name="tool_BMI_result">Result</string>
     <string name="tool_BMI_result_hint">your result</string>
     <string name="tool_BMI_status">Status</string>
@@ -106,5 +108,9 @@
     <string name="preference_language_message">Select your preferred language</string>
     <string name="preference_language_english" translatable="false">English</string>
     <string name="preference_language_spanish" translatable="false">Español</string>
+    <string name="preference_measurement_title">Measurement</string>
+    <string name="preference_measurement_message">Choose between metric and imperial measures</string>
+    <string name="preference_measurement_imperial">Imperial</string>
+    <string name="preference_measurement_metric">Metric</string>
 
 </resources>

@@ -11,11 +11,8 @@
     </string-array>
 
     <string-array name="measurement_menu">
-
-        <!-- TODO 3: externalize -->
-        <item>Metric</item>
-        <item>Imperial</item>
-
+        <item>@string/preference_measurement_imperial</item>
+        <item>@string/preference_measurement_metric</item>
     </string-array>
     <string-array name="measurement_values">
         <item>us</item>
