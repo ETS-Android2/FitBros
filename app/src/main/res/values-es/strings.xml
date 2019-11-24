@@ -86,4 +86,16 @@
     <string name="preference_measurement_message">Elige entre medidas métricas e imperiales</string>
     <string name="tool_BMI_height_hint_metric">altura en centímetros</string>
     <string name="tool_BMI_weight_hint_metric">peso en kilogramos</string>
+    <string name="button_RFM_calculate">calcular</string>
+    <string name="tool_RFM_height">altura</string>
+    <string name="tool_RFM_height_hint">altura en pulgadas</string>
+    <string name="tool_RFM_height_hint_metric">altura en centímetros</string>
+    <string name="tool_RFM_result">resultado</string>
+    <string name="tool_RFM_result_hint">tu resultado</string>
+    <string name="tool_RFM_status">estado</string>
+    <string name="tool_name_RFM">calculadora de RFM</string>
+    <string name="tool_RFM_status_hint">tu masa grasa relativa</string>
+    <string name="tool_RFM_waist_circumference">cintura</string>
+    <string name="tool_RFM_waist_hint">circunferencia en pulgadas</string>
+    <string name="tool_RFM_waist_hint_metric">circunferencia en centímetros</string>
 </resources>
