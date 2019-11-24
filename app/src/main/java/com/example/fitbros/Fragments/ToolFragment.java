@@ -51,7 +51,7 @@ public class ToolFragment extends Fragment {
         public Fragment getItem(int position) {
             switch(position) {
                 case 0: return new Tool_IntentsFragment();
-                case 1: return new Tool_BMIFragment();
+                case 1: return new Tool_RFMFragment();
                 case 2: return new Tool_BMIFragment();
                 default: return new Tool_IntentsFragment();
             }

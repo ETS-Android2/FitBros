@@ -74,6 +74,18 @@
     <string name="description_BMI">Content BMI</string>
 
     <!-- Tool content: RFM -->
+    <string name="tool_name_RFM">RFM Calculator</string>
+    <string name="tool_RFM_waist_circumference">Waist</string>
+    <string name="tool_RFM_waist_hint">waist circumference in inches</string>
+    <string name="tool_RFM_waist_hint_metric">waist circumference in cm</string>
+    <string name="tool_RFM_height">Height</string>
+    <string name="tool_RFM_height_hint">height in inches</string>
+    <string name="tool_RFM_height_hint_metric">height in cm</string>
+    <string name="tool_RFM_result">Result</string>
+    <string name="tool_RFM_result_hint">your result</string>
+    <string name="tool_RFM_status">Status</string>
+    <string name="tool_RFM_status_hint">your relative fat mass</string>
+    <string name="button_RFM_calculate">Calculate</string>
     <string name="description_RFM">Content RFM</string>
 
     <!-- Tool content: Intents -->
