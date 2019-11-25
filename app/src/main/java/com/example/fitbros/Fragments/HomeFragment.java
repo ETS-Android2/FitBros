@@ -2,6 +2,7 @@ package com.example.fitbros.Fragments;
 
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +24,9 @@ import com.example.fitbros.JavaBeans.NavType;
 import com.example.fitbros.R;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 
 /**
@@ -34,6 +39,11 @@ public class HomeFragment extends Fragment {
     TextView navMenuDescription;
     ListView listView;
 
+    // Link to the menu: Part 1
+    TextView usernameChange;
+    SharedPreferences sharedPreferences;
+
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -44,6 +54,30 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Link to the menu: Part 2
+        usernameChange = view.findViewById(R.id.usernameHome);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String newUsername = sharedPreferences.getString("userName", getResources().getString(R.string.preference_name_placeholder));
+
+        Date date = new Date();
+        Calendar calendar = GregorianCalendar.getInstance();
+        calendar.setTime(date);
+        int time = calendar.get(Calendar.HOUR_OF_DAY);
+
+        String message = "";
+
+        if(time < 12) {
+            message = getResources().getString(R.string.home_greeting_morning);
+        }
+        else if(time > 17) {
+            message = getResources().getString(R.string.home_greeting_evening);
+        }
+        else {
+            message = getResources().getString(R.string.home_greeting_afternoon);
+        }
+
+        usernameChange.setText(message + newUsername);
 
         listView = view.findViewById(R.id.homeNavList);
 

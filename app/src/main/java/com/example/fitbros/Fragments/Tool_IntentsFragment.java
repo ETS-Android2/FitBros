@@ -38,14 +38,17 @@ public class Tool_IntentsFragment extends Fragment {
         mapButton = view.findViewById(R.id.buttonGymFinder);
         webButton = view.findViewById(R.id.buttonGymFitTips);
 
+
+
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String alarmMessage = "Time to go to the gym!";
+                // CODE CHECKPOINT
+                // Toast.makeText(getContext(), R.string.error_alarm, Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent (AlarmClock.ACTION_SET_ALARM)
-                        .putExtra(AlarmClock.EXTRA_MESSAGE, alarmMessage)
+                        .putExtra(AlarmClock.EXTRA_MESSAGE, getResources().getString(R.string.tool_alarm_message))
                         .putExtra(AlarmClock.EXTRA_HOUR, 17)
                         .putExtra(AlarmClock.EXTRA_MINUTES,30);
 
@@ -53,8 +56,9 @@ public class Tool_IntentsFragment extends Fragment {
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getContext(), "Please install alarm to complete task.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.error_alarm, Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
@@ -62,7 +66,7 @@ public class Tool_IntentsFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                String tweet = String.format("https://twitter.com/intent/tweet?text=%s", ("I%27m+at+the+gym.+%23fitbros"));
+                String tweet = String.format("https://twitter.com/intent/tweet?text=%s", getResources().getString(R.string.tool_twitter_message));
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(tweet));
 
@@ -70,7 +74,7 @@ public class Tool_IntentsFragment extends Fragment {
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getContext(), "Please install Twitter and login to complete task.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.error_twitter, Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -90,7 +94,7 @@ public class Tool_IntentsFragment extends Fragment {
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getContext(), "Please install Google Maps to complete task.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.error_maps, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -107,7 +111,7 @@ public class Tool_IntentsFragment extends Fragment {
                 if(intent.resolveActivity(getActivity().getPackageManager()) !=null) {
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getContext(), "No software installed to complete task.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.error_web, Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -20,24 +20,23 @@ import android.widget.EditText;
 import com.example.fitbros.Constants;
 import com.example.fitbros.R;
 
-import java.text.DecimalFormat;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Tool_BMIFragment extends Fragment {
+public class Tool_RFMFragment extends Fragment {
 
     // create variables for the xml elements
-    EditText userWeight;
+    EditText userWaist;
     EditText userHeight;
-    EditText resultBMI;
-    EditText weightStatus;
+    EditText resultRFM;
+    EditText fatStatus;
 
     // Link to menu (Part 1)
     SharedPreferences sharedPreferences;
     String measurement;
 
-    public Tool_BMIFragment() {
+    public Tool_RFMFragment() {
         // Required empty public constructor
     }
 
@@ -46,12 +45,12 @@ public class Tool_BMIFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.fragment_tool_bmi, container, false);
+        final View view = inflater.inflate(R.layout.fragment_tool_rfm, container, false);
 
-        userWeight = view.findViewById(R.id.inputWeight);
-        userHeight = view.findViewById(R.id.inputHeight);
-        resultBMI = view.findViewById(R.id.outputResultBMI);
-        weightStatus = view.findViewById(R.id.outputStatusBMI);
+        userWaist = view.findViewById(R.id.inputWaist);
+        userHeight = view.findViewById(R.id.inputHeightRFM);
+        resultRFM = view.findViewById(R.id.outputResultRFM);
+        fatStatus = view.findViewById(R.id.outputStatusRFM);
 
         // Link to menu (Part 2)
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
@@ -59,48 +58,54 @@ public class Tool_BMIFragment extends Fragment {
 
         // Change placeholders for weight and height according to menu preference
         if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
-            userWeight.setHint(getResources().getString(R.string.tool_BMI_weight_hint));
-            userHeight.setHint(getResources().getString(R.string.tool_BMI_height_hint));
+            userWaist.setHint(getResources().getString(R.string.tool_RFM_waist_hint));
+            userHeight.setHint(getResources().getString(R.string.tool_RFM_height_hint));
 
         } else {
-            userWeight.setHint(getResources().getString(R.string.tool_BMI_weight_hint_metric));
-            userHeight.setHint(getResources().getString(R.string.tool_BMI_height_hint_metric));
+            userWaist.setHint(getResources().getString(R.string.tool_RFM_waist_hint_metric));
+            userHeight.setHint(getResources().getString(R.string.tool_RFM_height_hint_metric));
         }
 
-        Button clickButtonBMI = (Button) view.findViewById(R.id.buttonCalculateBMI);
+        Button clickButtonRFM = (Button) view.findViewById(R.id.buttonCalculateRFM);
 
-        clickButtonBMI.setOnClickListener(new View.OnClickListener() {
+        clickButtonRFM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 hideKeyboardFrom(getContext(), view);
 
-                double localWeight;
+                double localWaist;
                 double localHeight;
                 double localResult = 0;
                 String localStatus;
                 int colorRisk=0;
 
-                localWeight = Double.parseDouble(userWeight.getText().toString());
+                localWaist = Double.parseDouble(userWaist.getText().toString());
                 localHeight = Double.parseDouble(userHeight.getText().toString());
 
-                // check for user preference of metric or imperial
-                if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
-                    localResult = 703 * localWeight / (localHeight * localHeight);
+                localResult = 64 - (20 * localHeight/localWaist);
 
-                } else {
-                    localResult = localWeight / ((localHeight/100) * (localHeight/100));
-                }
+                // Potential TODO: check for gender of user
+//                if ( condition ) {
+//                    // Formula for men
+//                    localResult = 64 - (20 * localHeight/localWaist);
+//
+//                } else {
+//
+//                    // Formula for women
+//                    localResult = 76 - (20 * localHeight/localWaist);
+//
+//                }
 
                 // format result to include trailing 0 if .0
                 String formattedResult = String.format("%.1f", localResult);
 
-                resultBMI.setText(formattedResult);
+                resultRFM.setText(formattedResult);
 
-                // BMI Interpretation
+                // RFM Interpretation
 
                 if (localResult < 18.5) {
                     localStatus = "Underweight";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskOrange);
+                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskRed);
                 } else if (localResult < 25.0) {
                     localStatus = "Normal or Healthy";
                     colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskGreen);
@@ -109,11 +114,11 @@ public class Tool_BMIFragment extends Fragment {
                     colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskYellow);
                 } else {
                     localStatus = "Obese";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskOrange);
+                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskRed);
                 }
 
-                weightStatus.setText(localStatus);
-                weightStatus.setBackgroundColor(colorRisk);
+                fatStatus.setText(localStatus);
+                fatStatus.setBackgroundColor(colorRisk);
 
             }
         });
@@ -126,7 +131,9 @@ public class Tool_BMIFragment extends Fragment {
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    // Information for BMI sourced from CDC.gov
-    // BMI Interpretation: https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html#InterpretedAdults
+    // Information for RFM sourced from Cedars-Sinai Medical Center
+    // RFM Interpretation: https://www.cedars-sinai.org/blog/relative-fat-mass.html
+    // https://www.cedars-sinai.org/newsroom/cedars-sinai-investigators-develop-more-accurate-measure-of-body-fat/
+    // https://www.nature.com/articles/s41598-018-29362-1
 
 }
