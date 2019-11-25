@@ -93,6 +93,18 @@
         android:padding="10dp" />
 
     <Button
+        android:id="@+id/maleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_male" />
+
+    <Button
+        android:id="@+id/femaleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_female" />
+
+    <Button
         android:id="@+id/buttonCalculateRFM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
