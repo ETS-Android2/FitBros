@@ -87,6 +87,8 @@
     <string name="tool_RFM_status_hint">your relative fat mass</string>
     <string name="button_RFM_calculate">Calculate</string>
     <string name="description_RFM">Content RFM</string>
+    <string name="button_male">Male</string>
+    <string name="button_female">Female</string>
 
     <!-- Tool content: Intents -->
     <string name="button_tool_alarm">Set workout alarm</string>

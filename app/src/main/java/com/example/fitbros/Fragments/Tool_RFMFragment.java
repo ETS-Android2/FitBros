@@ -32,6 +32,11 @@ public class Tool_RFMFragment extends Fragment {
     EditText resultRFM;
     EditText fatStatus;
 
+    //Gender buttons
+    Button maleButton;
+    Button femaleButton;
+    String gender = "male";
+
     // Link to menu (Part 1)
     SharedPreferences sharedPreferences;
     String measurement;
@@ -51,6 +56,24 @@ public class Tool_RFMFragment extends Fragment {
         userHeight = view.findViewById(R.id.inputHeightRFM);
         resultRFM = view.findViewById(R.id.outputResultRFM);
         fatStatus = view.findViewById(R.id.outputStatusRFM);
+
+        //link buttons
+        maleButton = view.findViewById(R.id.maleButton);
+        femaleButton = view.findViewById(R.id.femaleButton);
+
+        maleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gender = "male";
+            }
+        });
+
+        femaleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gender = "female";
+            }
+        });
 
         // Link to menu (Part 2)
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
@@ -82,19 +105,17 @@ public class Tool_RFMFragment extends Fragment {
                 localWaist = Double.parseDouble(userWaist.getText().toString());
                 localHeight = Double.parseDouble(userHeight.getText().toString());
 
-                localResult = 64 - (20 * localHeight/localWaist);
-
                 // Potential TODO: check for gender of user
-//                if ( condition ) {
-//                    // Formula for men
-//                    localResult = 64 - (20 * localHeight/localWaist);
-//
-//                } else {
-//
-//                    // Formula for women
-//                    localResult = 76 - (20 * localHeight/localWaist);
-//
-//                }
+                if (gender.equals("male")) {
+                    // Formula for men
+                    localResult = 64 - (20 * localHeight/localWaist);
+
+                } else if (gender.equals("female")){
+
+                    // Formula for women
+                    localResult = 76 - (20 * localHeight/localWaist);
+
+                }
 
                 // format result to include trailing 0 if .0
                 String formattedResult = String.format("%.1f", localResult);
