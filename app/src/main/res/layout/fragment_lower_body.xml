@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Fragments.LowerBodyFragment">
 
@@ -10,8 +11,8 @@
         android:id="@+id/imageLowerBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_picture"
-        android:src="@android:drawable/ic_secure" />
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/nav_workout_lower" />
 
     <Button
         android:id="@+id/buttonQuad"
