@@ -44,7 +44,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/buttonChest"
+        android:id="@+id/buttonBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
@@ -52,7 +52,7 @@
         android:background="@color/colorBlueMedium"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
-        android:text="@string/submenu_upper_chest"
+        android:text="@string/submenu_upper_back"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />

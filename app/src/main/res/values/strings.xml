@@ -31,7 +31,7 @@
     <!-- sub-navigation titles -->
     <string name="submenu_upper_bicep">Bicep</string>
     <string name="submenu_upper_tricep">Tricep</string>
-    <string name="submenu_upper_chest">Chest</string>
+    <string name="submenu_upper_back">Back</string>
     <string name="submenu_lower_quad">Quads</string>
     <string name="submenu_lower_hamstring">Hamstrings</string>
     <string name="submenu_lower_calves">Calves</string>
