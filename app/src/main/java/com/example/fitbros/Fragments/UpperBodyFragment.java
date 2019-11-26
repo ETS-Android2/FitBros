@@ -38,7 +38,7 @@ public class UpperBodyFragment extends Fragment {
 
         bicepButton = view.findViewById(R.id.buttonBicep);
         tricepButton = view.findViewById(R.id.buttonTricep);
-        chestButton = view.findViewById(R.id.buttonChest);
+        chestButton = view.findViewById(R.id.buttonBack);
 
         bicepButton.setOnClickListener(new View.OnClickListener() {
             @Override
