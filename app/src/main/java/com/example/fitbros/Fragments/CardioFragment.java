@@ -44,7 +44,7 @@ public class CardioFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Treadmill", R.drawable.workout_machine_treadmill, "Turn it to the speed and incline you'd like and run", "5kmph speed and 5% incline for 30 minutes"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_machine01), R.drawable.workout_machine_treadmill, getResources().getString(R.string.workout_description_machine01), getResources().getString(R.string.workout_length_machine01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
@@ -55,7 +55,7 @@ public class CardioFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Cycling", R.drawable.workout_manual_cycle, "Sit on the bicycle and peddle with your feet", "Steady pace for 30 minutes"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_manual01), R.drawable.workout_manual_cycle, getResources().getString(R.string.workout_description_manual01), getResources().getString(R.string.workout_length_manual01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
@@ -66,7 +66,7 @@ public class CardioFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Rope Climbing", R.drawable.workout_rope_climb, "Extend your arms and reach as far as you can and grab the rope using your feet as assistance to hold you up. Repeat this until you're at the top of the rope", "3 sets"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_ropes01), R.drawable.workout_rope_climb, getResources().getString(R.string.workout_description_ropes01), getResources().getString(R.string.workout_length_ropes01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }

@@ -43,7 +43,7 @@ public class CoreFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Battle Ropes", R.drawable.workout_core_abs_battle_ropes, "Hold the ropes and slightly bend your knees, then swing the ropes up and down while keep a good posture", "3 times for 60 seconds"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_abd01), R.drawable.workout_core_abs_battle_ropes, getResources().getString(R.string.workout_description_abd01), getResources().getString(R.string.workout_length_abd01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
@@ -54,7 +54,7 @@ public class CoreFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Side Oblique Crunch", R.drawable.workout_core_obliques, "Lie down on the floor with your legs stacked and bring your right hand behind your head while using your left to hold yourself up. Bring your elbow up (connected to your head) and towards your feet then bring it back", "3 sets of 10 reps"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_obliques01), R.drawable.workout_core_obliques, getResources().getString(R.string.workout_description_obliques01), getResources().getString(R.string.workout_length_obliques01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
@@ -65,7 +65,7 @@ public class CoreFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Tire Flips", R.drawable.workout_core_glutes, "Bend your knees and keep your back straight. While infront of the tire grab underneath it and lift it upwards and flip it", "3 sets of 10 reps"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_glutes01), R.drawable.workout_core_glutes, getResources().getString(R.string.workout_description_glutes01), getResources().getString(R.string.workout_length_glutes01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
