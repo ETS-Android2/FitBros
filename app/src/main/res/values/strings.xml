@@ -23,7 +23,7 @@
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
     <string name="menu_cardio_long">Cardio Workout</string>
-    <string name="menu_tool">Tools &#38; Calculators</string>
+    <string name="menu_tool">Tools &#038; Calculators</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_contacts">Tech Support</string>
     <string name="menu_workouts">Workouts</string>
@@ -38,9 +38,9 @@
     <string name="submenu_core_abs">Abdominals</string>
     <string name="submenu_core_obliques">Obliques</string>
     <string name="submenu_core_glutes">Glutes</string>
-    <string name="submenu_cardio_treadmill">Treadmill</string>
-    <string name="submenu_cardio_cycle">Cycle</string>
-    <string name="submenu_cardio_jump">Jump Rope</string>
+    <string name="submenu_cardio_machine">Machine</string>
+    <string name="submenu_cardio_manual">Manual</string>
+    <string name="submenu_cardio_ropes">Ropes</string>
     <string name="submenu_tools_BMI">BMI: Body Mass Index</string>
     <string name="submenu_tools_BMI_short">BMI Calculator</string>
     <string name="submenu_tools_RFM">RFM: Relative Fat Mass Index</string>

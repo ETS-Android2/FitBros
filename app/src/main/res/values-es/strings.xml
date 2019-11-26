@@ -47,9 +47,9 @@
     <string name="preference_name_message">Personaliza esta aplicación con tu nombre</string>
     <string name="preference_name_placeholder">FitBro</string>
     <string name="preference_name_title">tu nombre</string>
-    <string name="submenu_cardio_cycle">ciclo</string>
-    <string name="submenu_cardio_jump">saltar la cuerda</string>
-    <string name="submenu_cardio_treadmill">rueda de andar</string>
+    <string name="submenu_cardio_manual">manual</string>
+    <string name="submenu_cardio_ropes">cuerdas</string>
+    <string name="submenu_cardio_machine">máquina</string>
     <string name="submenu_core_abs">abdominales</string>
     <string name="submenu_core_glutes">músculos glúteos</string>
     <string name="submenu_core_obliques">músculos oblicuos</string>
