@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.fitbros.Constants;
+import com.example.fitbros.JavaBeans.Workout;
 import com.example.fitbros.R;
 
 
@@ -43,6 +44,8 @@ public class CardioFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout("Treadmill", R.drawable.workout_machine_treadmill, "Turn it to the speed and incline you'd like and run", "5kmph speed and 5% incline for 30 minutes"));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
         });
@@ -52,6 +55,8 @@ public class CardioFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout("Cycling", R.drawable.workout_manual_cycle, "Sit on the bicycle and peddle with your feet", "Steady pace for 30 minutes"));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
         });
@@ -60,6 +65,8 @@ public class CardioFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
+
+                Constants.workouts.add(new Workout("Rope Climbing", R.drawable.workout_rope_climb, "Extend your arms and reach as far as you can and grab the rope using your feet as assistance to hold you up. Repeat this until you're at the top of the rope", "3 sets"));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_cardio_to_workoutFragment);
             }
