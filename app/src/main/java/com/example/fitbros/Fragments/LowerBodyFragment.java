@@ -44,7 +44,7 @@ public class LowerBodyFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Squats", R.drawable.workout_lower_box, "Place a barbell with weights right below your neck and squat down until you hit right below 90 degrees, then attempt to lift back up", "3 sets of 10 reps"));
+                Constants.workouts.add(new Workout("Squats", R.drawable.workout_lower_squat, "Place a barbell with weights right below your neck and squat down until you hit right below 90 degrees, then attempt to lift back up", "3 sets of 10 reps"));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_lower_body_to_workoutFragment);
             }

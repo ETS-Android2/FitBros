@@ -16,7 +16,7 @@
         android:src="@android:drawable/ic_secure" />
 
     <Button
-        android:id="@+id/buttonTreadmill"
+        android:id="@+id/buttonMachine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
@@ -25,13 +25,13 @@
         android:background="@color/colorBlueMedium"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
-        android:text="@string/submenu_cardio_treadmill"
+        android:text="@string/submenu_cardio_machine"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/buttonCycle"
+        android:id="@+id/buttonManual"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
@@ -40,13 +40,13 @@
         android:background="@color/colorBlueMedium"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
-        android:text="@string/submenu_cardio_cycle"
+        android:text="@string/submenu_cardio_manual"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/buttonJump"
+        android:id="@+id/buttonRope"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
@@ -54,7 +54,7 @@
         android:background="@color/colorBlueMedium"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
-        android:text="@string/submenu_cardio_jump"
+        android:text="@string/submenu_cardio_ropes"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
