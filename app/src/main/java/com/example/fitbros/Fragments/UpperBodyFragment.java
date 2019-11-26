@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.fitbros.Constants;
+import com.example.fitbros.JavaBeans.Workout;
 import com.example.fitbros.R;
 
 
@@ -43,6 +44,8 @@ public class UpperBodyFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
+
+                Constants.workouts.add(new Workout("Name", R.drawable.ic_home_grayblue_24dp, "Desc", "Reps"));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
             }
