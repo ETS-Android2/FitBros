@@ -36,7 +36,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
         Workout workout = workouts.get(position);
 
         ((CustomViewHolder)holder).name.setText(workout.getName());
-        ((CustomViewHolder)holder).image.setImageAlpha(workout.getImage());
+        ((CustomViewHolder)holder).image.setImageResource(workout.getImage());
         ((CustomViewHolder)holder).description.setText(workout.getDescription());
         ((CustomViewHolder)holder).amountReps.setText(workout.getAmountReps());
     }

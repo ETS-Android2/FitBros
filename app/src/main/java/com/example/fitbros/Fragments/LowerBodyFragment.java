@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.fitbros.Constants;
+import com.example.fitbros.JavaBeans.Workout;
 import com.example.fitbros.R;
 
 
@@ -43,6 +44,8 @@ public class LowerBodyFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout("Squats", R.drawable.workout_lower_box, "Place a barbell with weights right below your neck and squat down until you hit right below 90 degrees, then attempt to lift back up", "3 sets of 10 reps"));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_lower_body_to_workoutFragment);
             }
         });
@@ -52,6 +55,8 @@ public class LowerBodyFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout("Box Jumps", R.drawable.workout_lower_box, "Bend your knees about 45 degrees and attempt to jump on the box, then jump back to the floor", "3 sets of 10 reps"));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_lower_body_to_workoutFragment);
             }
         });
@@ -60,6 +65,8 @@ public class LowerBodyFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
+
+                Constants.workouts.add(new Workout("Lunges", R.drawable.workout_lower_lunge, "Hold some low weight dumbbells and bend one knee until it touches the ground, then lift back up and repeat with your other knee", "3 sets of 10 reps"));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_lower_body_to_workoutFragment);
             }

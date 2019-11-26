@@ -62,7 +62,7 @@
     <string name="submenu_tools_RFM_short">calculadora de RFM</string>
     <string name="submenu_upper_bicep">músculo bíceps</string>
     <string name="submenu_upper_tricep">músculo tríceps</string>
-    <string name="submenu_upper_chest">músculo pectoral</string>
+    <string name="submenu_upper_back">músculos de la espalda</string>
     <string name="tech_support_email_body_text">Hola FitBros. Me gustaría informar un problema con lo siguiente:&#160;</string>
     <string name="tech_support_email_subject">Atención: Soporte técnico para la aplicación FitBros</string>
     <string name="tech_support_sms_message">Hola FitBros. Tengo problemas con lo siguiente:&#160;</string>
@@ -98,4 +98,6 @@
     <string name="tool_RFM_waist_circumference">cintura</string>
     <string name="tool_RFM_waist_hint">circunferencia en pulgadas</string>
     <string name="tool_RFM_waist_hint_metric">circunferencia en centímetros</string>
+    <string name="button_female">feminino</string>
+    <string name="button_male">masculino</string>
 </resources>

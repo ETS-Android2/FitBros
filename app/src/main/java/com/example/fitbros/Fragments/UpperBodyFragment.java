@@ -38,14 +38,16 @@ public class UpperBodyFragment extends Fragment {
 
         bicepButton = view.findViewById(R.id.buttonBicep);
         tricepButton = view.findViewById(R.id.buttonTricep);
-        chestButton = view.findViewById(R.id.buttonChest);
+        chestButton = view.findViewById(R.id.buttonBack);
 
         bicepButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("Name", R.drawable.ic_home_grayblue_24dp, "Desc", "Reps"));
+                Constants.workouts.add(new Workout("EZ-Bar Curls", R.drawable.workout_bicep_01, "Hold bar using the handle grip helpers on the bar and attempt to curl up and down", "3 sets of 10 reps"));
+                Constants.workouts.add(new Workout("Standard Bar Curls", R.drawable.workout_bicep_02, "Hold bar shoulder-width apart and attempt to curl up and down", "3 sets of 10 reps"));
+                Constants.workouts.add(new Workout("Dumbbell Curls", R.drawable.workout_bicep_03, "Hold a dumbbell in each hand and attempt to curl each hand separately", "3 sets of 10 reps"));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
             }
