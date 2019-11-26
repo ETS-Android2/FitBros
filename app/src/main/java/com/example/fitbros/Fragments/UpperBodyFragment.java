@@ -23,7 +23,7 @@ public class UpperBodyFragment extends Fragment {
 
     Button bicepButton;
     Button tricepButton;
-    Button chestButton;
+    Button backButton;
 
 
     public UpperBodyFragment() {
@@ -38,16 +38,16 @@ public class UpperBodyFragment extends Fragment {
 
         bicepButton = view.findViewById(R.id.buttonBicep);
         tricepButton = view.findViewById(R.id.buttonTricep);
-        chestButton = view.findViewById(R.id.buttonBack);
+        backButton = view.findViewById(R.id.buttonBack);
 
         bicepButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
-                Constants.workouts.add(new Workout("EZ-Bar Curls", R.drawable.workout_bicep_01, "Hold bar using the handle grip helpers on the bar and attempt to curl up and down", "3 sets of 10 reps"));
-                Constants.workouts.add(new Workout("Standard Bar Curls", R.drawable.workout_bicep_02, "Hold bar shoulder-width apart and attempt to curl up and down", "3 sets of 10 reps"));
-                Constants.workouts.add(new Workout("Dumbbell Curls", R.drawable.workout_bicep_03, "Hold a dumbbell in each hand and attempt to curl each hand separately", "3 sets of 10 reps"));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_bicep01), R.drawable.workout_bicep_01, getResources().getString(R.string.workout_description_bicep01), getResources().getString(R.string.workout_length_bicep01)));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_bicep02), R.drawable.workout_bicep_02, getResources().getString(R.string.workout_description_bicep02), getResources().getString(R.string.workout_length_bicep02)));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_bicep03), R.drawable.workout_bicep_03, getResources().getString(R.string.workout_description_bicep03), getResources().getString(R.string.workout_length_bicep03)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
             }
@@ -58,14 +58,21 @@ public class UpperBodyFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_tricep01), R.drawable.workout_tricep_01, getResources().getString(R.string.workout_description_tricep01), getResources().getString(R.string.workout_length_tricep01)));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_tricep02), R.drawable.workout_tricep_02, getResources().getString(R.string.workout_description_tricep02), getResources().getString(R.string.workout_length_tricep02)));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
             }
         });
 
-        chestButton.setOnClickListener(new View.OnClickListener() {
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
+
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_back01), R.drawable.workout_back_01, getResources().getString(R.string.workout_description_back01), getResources().getString(R.string.workout_length_back01)));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_back02), R.drawable.workout_back_02, getResources().getString(R.string.workout_description_back02), getResources().getString(R.string.workout_length_back02)));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_back03), R.drawable.workout_back_03, getResources().getString(R.string.workout_description_back03), getResources().getString(R.string.workout_length_back03)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
             }

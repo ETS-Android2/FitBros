@@ -127,4 +127,61 @@
     <string name="preference_measurement_imperial">Imperial</string>
     <string name="preference_measurement_metric">Metric</string>
 
+    <!-- Workout Names -->
+    <string name="workout_name_bicep01">EZ-Bar Curls</string>
+    <string name="workout_name_bicep02">Standard Bar Curls</string>
+    <string name="workout_name_bicep03">Dumbbell Curls</string>
+    <string name="workout_name_tricep01">Tricep Pulldowns</string>
+    <string name="workout_name_tricep02">Tricep Extensions</string>
+    <string name="workout_name_back01">Reverse-grip Upright Rows</string>
+    <string name="workout_name_back02">Seated Machine Rows</string>
+    <string name="workout_name_back03">Deadlifts</string>
+    <string name="workout_name_quads01">Squats</string>
+    <string name="workout_name_hams01">Box Jumps</string>
+    <string name="workout_name_calves01">Lunges</string>
+    <string name="workout_name_abd01">Battle Ropes</string>
+    <string name="workout_name_obliques01">Side Oblique Crunch</string>
+    <string name="workout_name_glutes01">Tire Flips</string>
+    <string name="workout_name_machine01">Treadmill</string>
+    <string name="workout_name_manual01">Cycling</string>
+    <string name="workout_name_ropes01">Rope Climbing</string>
+
+    <!-- Workout Descriptions -->
+    <string name="workout_description_bicep01">Hold bar using the handle grip helpers on the bar and attempt to curl up and down</string>
+    <string name="workout_description_bicep02">Hold bar shoulder-width apart and attempt to curl up and down</string>
+    <string name="workout_description_bicep03">Hold a dumbbell in each hand and attempt to curl each hand separately</string>
+    <string name="workout_description_tricep01">Slightly bend your knees and lean forward, pull down the rope and flex your triceps at the bottom</string>
+    <string name="workout_description_tricep02">Hold the dumbbell over your head and lower it until your arm is fully bent down, then lift it back above your head</string>
+    <string name="workout_description_back01">Hold a barbell with your palms facing out and slightly bend your knees, then lower the barbell until your elbows are locked and pull the barbell back up</string>
+    <string name="workout_description_back02">Sit on the seat and put your legs on the end with your knees slightly bent, then grab the bar and pull it back until you are fully arched and then slowly let the bar go back until your elbows are locked</string>
+    <string name="workout_description_back03">Put your feet shoulder width apart and move towards the bar until your shoe laces are directly under. Bend down and grab the bar and have your chest out and keep your back straight. Lift upwards and squeeze your glutes at the top then go back down in the same fashion.</string>
+    <string name="workout_description_quads01">Place a barbell with weights right below your neck and squat down until you hit right below 90 degrees, then attempt to lift back up</string>
+    <string name="workout_description_hams01">Bend your knees about 45 degrees and attempt to jump on the box, then jump back to the floor</string>
+    <string name="workout_description_calves01">Hold some low weight dumbbells and bend one knee until it touches the ground, then lift back up and repeat with your other knee</string>
+    <string name="workout_description_abd01">Hold the ropes and slightly bend your knees, then swing the ropes up and down while keep a good posture</string>
+    <string name="workout_description_obliques01">Lie down on the floor with your legs stacked and bring your right hand behind your head while using your left to hold yourself up. Bring your elbow up (connected to your head) and towards your feet then bring it back</string>
+    <string name="workout_description_glutes01">Bend your knees and keep your back straight. While infront of the tire grab underneath it and lift it upwards and flip it</string>
+    <string name="workout_description_machine01">Turn it to the speed and incline you\'d like and run</string>
+    <string name="workout_description_manual01">Sit on the bicycle and peddle with your feet</string>
+    <string name="workout_description_ropes01">Extend your arms and reach as far as you can and grab the rope using your feet as assistance to hold you up. Repeat this until you\'re at the top of the rope</string>
+
+    <!-- Workout Lengths -->
+    <string name="workout_length_bicep01">3 sets of 10 reps</string>
+    <string name="workout_length_bicep02">3 sets of 10 reps</string>
+    <string name="workout_length_bicep03">3 sets of 10 reps</string>
+    <string name="workout_length_tricep01">3 sets of 10 reps</string>
+    <string name="workout_length_tricep02">3 sets of 10 reps</string>
+    <string name="workout_length_back01">3 sets of 10 reps</string>
+    <string name="workout_length_back02">3 sets of 10 reps</string>
+    <string name="workout_length_back03">3 sets of 10 reps</string>
+    <string name="workout_length_quads01">3 sets of 10 reps</string>
+    <string name="workout_length_hams01">3 sets of 10 reps</string>
+    <string name="workout_length_calves01">3 sets of 10 reps</string>
+    <string name="workout_length_abd01">3 times for 60 seconds</string>
+    <string name="workout_length_obliques01">3 sets of 10 reps</string>
+    <string name="workout_length_glutes01">3 sets of 10 reps</string>
+    <string name="workout_length_machine01">5kmph speed and 5% incline for 30 minutes</string>
+    <string name="workout_length_manual01">Steady pace for 30 minutes</string>
+    <string name="workout_length_ropes01">3 times</string>
+
 </resources>
