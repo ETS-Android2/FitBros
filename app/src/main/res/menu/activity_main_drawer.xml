@@ -6,23 +6,23 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_home_grayblue_24dp"
+            android:icon="@drawable/ic_home_gold_24dp"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_upper_body"
-            android:icon="@drawable/ic_upper_body_grayblue_24dp"
+            android:icon="@drawable/ic_upper_body_gold_24dp"
             android:title="@string/menu_upper_body" />
         <item
             android:id="@+id/nav_lower_body"
-            android:icon="@drawable/ic_lower_body_grayblue_24dp"
+            android:icon="@drawable/ic_lower_body_gold_24dp"
             android:title="@string/menu_lower_body" />
         <item
             android:id="@+id/nav_core_muscles"
-            android:icon="@drawable/ic_core_muscles_grayblue_24dp"
+            android:icon="@drawable/ic_core_muscles_gold_24dp"
             android:title="@string/menu_core_muscles" />
         <item
             android:id="@+id/nav_cardio"
-            android:icon="@drawable/ic_cardio_grayblue_24dp"
+            android:icon="@drawable/ic_cardio_gold_24dp"
             android:title="@string/menu_cardio" />
     </group>
 
@@ -31,15 +31,15 @@
 
             <item
                 android:id="@+id/nav_tools"
-                android:icon="@drawable/ic_calculator_grayblue_24dp"
+                android:icon="@drawable/ic_calculator_gold_24dp"
                 android:title="@string/menu_tool" />
             <item
                 android:id="@+id/nav_contact"
-                android:icon="@drawable/ic_contact_us_grayblue_24dp"
+                android:icon="@drawable/ic_contact_us_gold_24dp"
                 android:title="@string/menu_contacts" />
             <item
                 android:id="@+id/nav_credits"
-                android:icon="@drawable/ic_credits_grayblue_24dp"
+                android:icon="@drawable/ic_credits_gold_24dp"
                 android:title="@string/menu_credits" />
         </menu>
     </item>

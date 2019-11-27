@@ -60,6 +60,7 @@ public class UpperBodyFragment extends Fragment {
 
                 Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_tricep01), R.drawable.workout_tricep_01, getResources().getString(R.string.workout_description_tricep01), getResources().getString(R.string.workout_length_tricep01)));
                 Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_tricep02), R.drawable.workout_tricep_02, getResources().getString(R.string.workout_description_tricep02), getResources().getString(R.string.workout_length_tricep02)));
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_tricep03), R.drawable.workout_tricep_03, getResources().getString(R.string.workout_description_tricep03), getResources().getString(R.string.workout_length_tricep03)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_upper_body_to_workoutFragment);
             }

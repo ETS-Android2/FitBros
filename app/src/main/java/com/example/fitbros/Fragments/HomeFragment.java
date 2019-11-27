@@ -83,11 +83,11 @@ public class HomeFragment extends Fragment {
 
         final ArrayList<NavType> navTypes = new ArrayList<>();
         
-        navTypes.add(new NavType (getResources().getString(R.string.menu_upper_body), getResources().getString(R.string.description_upper_body), R.drawable.ic_upper_body_grayblue_24dp));
-        navTypes.add(new NavType (getResources().getString(R.string.menu_lower_body), getResources().getString(R.string.description_lower_body), R.drawable.ic_lower_body_grayblue_24dp));
-        navTypes.add(new NavType (getResources().getString(R.string.menu_core_muscles), getResources().getString(R.string.description_core_muscles), R.drawable.ic_core_muscles_grayblue_24dp));
-        navTypes.add(new NavType (getResources().getString(R.string.menu_cardio_long), getResources().getString(R.string.description_cardio), R.drawable.ic_cardio_grayblue_24dp));
-        navTypes.add(new NavType (getResources().getString(R.string.menu_tool), getResources().getString(R.string.description_tools), R.drawable.ic_calculator_grayblue_24dp));
+        navTypes.add(new NavType (getResources().getString(R.string.menu_upper_body), getResources().getString(R.string.description_upper_body), R.drawable.ic_upper_body_gold_24dp));
+        navTypes.add(new NavType (getResources().getString(R.string.menu_lower_body), getResources().getString(R.string.description_lower_body), R.drawable.ic_lower_body_gold_24dp));
+        navTypes.add(new NavType (getResources().getString(R.string.menu_core_muscles), getResources().getString(R.string.description_core_muscles), R.drawable.ic_core_muscles_gold_24dp));
+        navTypes.add(new NavType (getResources().getString(R.string.menu_cardio_long), getResources().getString(R.string.description_cardio), R.drawable.ic_cardio_gold_24dp));
+        navTypes.add(new NavType (getResources().getString(R.string.menu_tool), getResources().getString(R.string.description_tools), R.drawable.ic_calculator_gold_24dp));
 
         ArrayAdapter adapter = new ArrayAdapter(getContext(),
                 android.R.layout.simple_list_item_1, navTypes);

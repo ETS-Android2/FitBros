@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4B83B0</color>
-    <color name="colorPrimaryDark">#535F82</color>
-    <color name="colorAccent">#33B5E5</color>
+    <color name="colorPrimary">#AD974F</color>
+    <color name="colorPrimaryDark">#231F20</color>
+    <color name="colorAccent">#BFBFBF</color>
+
+    <!-- FitBros Palette -->
+    <color name="colorGoldDark">#8E793E</color>
+    <color name="colorGoldLight">#AD974F</color>
+    <color name="colorBlackTrue">#000000</color>
+    <color name="colorBlackCharcoal">#231F20</color>
+    <color name="colorGrayDark">#6B6B6B</color>
+    <color name="colorGrayLight">#BFBFBF</color>
 
 
     <!-- Blue Colour Set -->
