@@ -74,8 +74,8 @@ public class Tool_BMIFragment extends Fragment {
             public void onClick(View v) {
                 hideKeyboardFrom(getContext(), view);
 
-                double localWeight;
-                double localHeight;
+                double localWeight = 0;
+                double localHeight = 0;
                 double localResult = 0;
                 String localStatus;
                 int colorRisk=0;
