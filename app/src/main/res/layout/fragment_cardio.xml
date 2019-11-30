@@ -21,12 +21,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:layout_marginTop="@dimen/margin_button_top"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/submenu_cardio_machine"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonText"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -36,12 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/submenu_cardio_manual"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonText"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -51,11 +52,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/submenu_cardio_ropes"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonText"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 </LinearLayout>
