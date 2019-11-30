@@ -12,8 +12,11 @@
     <color name="colorGrayDark">#6B6B6B</color>
     <color name="colorGrayLight">#BFBFBF</color>
 
+    <!-- Buttons -->
+    <color name="colorButton">#8E793E</color>
+    <color name="colorButtonText">#000000</color>
 
-    <!-- Blue Colour Set -->
+    <!-- Old Blue Colour Set -->
     <!-- Typography -->
     <color name="colorTextIndigo">#272635</color>
     <!-- Menu Icons -->
