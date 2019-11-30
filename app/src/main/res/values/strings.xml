@@ -101,7 +101,7 @@
     <string name="error_web">Please install software to access the web.</string>
     <string name="tool_alarm_message">Time to go to the gym!</string>
     <string name="tool_twitter_message">I%27m+at+the+gym.+%23fitbros</string>
-    <string name="tool_swipe">&#60;      &#62;</string>
+    <string name="tool_swipe">&#60;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#62;</string>
 
     <!-- Contact content: Intents -->
     <string name="button_contact_email">Email</string>
