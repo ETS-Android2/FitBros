@@ -15,6 +15,7 @@
     <!-- Buttons -->
     <color name="colorButton">#8E793E</color>
     <color name="colorButtonText">#000000</color>
+    <color name="colorButtonTextTools">#FFFFFF</color>
 
     <!-- Old Blue Colour Set -->
     <!-- Typography -->
