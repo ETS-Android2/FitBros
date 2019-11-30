@@ -61,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
+    /**
+     * This will change the app's current language
+     * @param localeCode
+     * @author Hasan Muslemani
+     * @date November 15, 2019
+     * @version 1.0
+     */
     private void setAppLocale(String localeCode) {
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
@@ -96,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        //check to see which permission was returned and run the specified intent for that permission
         switch(requestCode) {
             case ContactFragment.PERMISSION_SEND_SMS:
                 if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {

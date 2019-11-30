@@ -74,8 +74,8 @@ public class Tool_BMIFragment extends Fragment {
             public void onClick(View v) {
                 hideKeyboardFrom(getContext(), view);
 
-                double localWeight;
-                double localHeight;
+                double localWeight = 0;
+                double localHeight = 0;
                 double localResult = 0;
                 String localStatus;
                 int colorRisk=0;
@@ -121,6 +121,14 @@ public class Tool_BMIFragment extends Fragment {
         return view;
     }
 
+    /**
+     * This will take the keyboard off the screen
+     * @param context
+     * @param view
+     * @author Hasan Muslemani
+     * @date November 20, 2019
+     * @version 1.0
+     */
     public static void hideKeyboardFrom(Context context, View view) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
