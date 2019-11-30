@@ -77,7 +77,7 @@ public class HomeFragment extends Fragment {
             message = getResources().getString(R.string.home_greeting_afternoon);
         }
 
-        usernameChange.setText(message + newUsername);
+        usernameChange.setText(message + "\n" + newUsername);
 
         listView = view.findViewById(R.id.homeNavList);
 
