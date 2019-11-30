@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
      * @param localeCode
      * @author Hasan Muslemani
      * @date November 15, 2019
-     * @version 1.0     
+     * @version 1.0
      */
     private void setAppLocale(String localeCode) {
         Resources res = getResources();
