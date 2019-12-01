@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
     android:orientation="vertical"
     tools:context=".Fragments.CoreFragment">
 
@@ -10,8 +12,8 @@
         android:id="@+id/imageCoreMuscles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_picture"
-        android:src="@android:drawable/ic_secure" />
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/nav_workout_core" />
 
     <Button
         android:id="@+id/buttonAbs"
@@ -19,12 +21,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:layout_marginTop="@dimen/margin_button_top"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/submenu_core_abs"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonText"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -34,12 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/submenu_core_obliques"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonText"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -49,11 +52,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/submenu_core_glutes"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonText"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 </LinearLayout>

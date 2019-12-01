@@ -8,34 +8,16 @@
     android:useDefaultMargins="true"
     tools:context=".Fragments.Tool_RFMFragment">
 
-    <LinearLayout
-        android:layout_columnSpan="2"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/swipe"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageSwipeLeft"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_swipe_left_grayblue_24dp" />
-
-        <ImageView
-            android:id="@+id/imageCalculatorRFM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@android:drawable/ic_secure" />
-
-        <ImageView
-            android:id="@+id/imageSwipeRight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_swipe_right_grayblue_24dp" />
-
-    </LinearLayout>
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:text="@string/tool_swipe"
+        android:textColor="@color/colorGoldLight"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/titleRFM"
@@ -43,9 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
-        android:fontFamily="serif"
+        android:fontFamily="@font/kaushan_script"
         android:text="@string/tool_name_RFM"
         android:textAlignment="center"
+        android:textColor="@color/colorBlackCharcoal"
         android:textSize="@dimen/text_large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -56,8 +39,10 @@
         android:id="@+id/labelWaist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="right"
+        android:width="@dimen/tool_width_label"
         android:layout_columnSpan="1"
-        android:fontFamily="serif"
+        android:fontFamily="@font/kaushan_script"
         android:text="@string/tool_RFM_waist_circumference"
         android:textSize="@dimen/text_medium" />
 
@@ -65,8 +50,10 @@
         android:id="@+id/inputWaist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/colorBlueLight"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@color/colorToolInputBox"
         android:ems="10"
         android:hint="@string/tool_RFM_waist_hint"
         android:inputType="numberDecimal"
@@ -77,20 +64,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnSpan="1"
-        android:fontFamily="serif"
+        android:fontFamily="@font/kaushan_script"
         android:text="@string/tool_RFM_height"
+        android:gravity="right"
+        android:width="@dimen/tool_width_label"
         android:textSize="@dimen/text_medium" />
 
     <EditText
         android:id="@+id/inputHeightRFM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/colorBlueLight"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@color/colorToolInputBox"
         android:ems="10"
         android:hint="@string/tool_RFM_height_hint"
         android:inputType="numberDecimal"
         android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/maleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_button_top_regular"
+            android:layout_marginRight="12dp"
+            android:background="@color/colorBlackCharcoal"
+            android:paddingTop="@dimen/padding_button"
+            android:paddingBottom="@dimen/padding_button"
+            android:text="@string/button_male"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/femaleButton"
+            android:textSize="@dimen/text_general"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_button_top_regular"
+            android:background="@color/colorBlackCharcoal"
+            android:textColor="@android:color/white"
+            android:paddingTop="@dimen/padding_button"
+            android:paddingBottom="@dimen/padding_button"
+            android:text="@string/button_female" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonCalculateRFM"
@@ -99,9 +125,10 @@
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
         android:layout_marginLeft="@dimen/margin_button"
+        android:layout_marginTop="@dimen/margin_button_top_regular"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:background="@color/colorBlackCharcoal"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/button_RFM_calculate"
@@ -113,7 +140,10 @@
         android:id="@+id/labelResultRFM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        android:layout_columnSpan="1"
+        android:fontFamily="@font/kaushan_script"
+        android:gravity="right"
+        android:width="@dimen/tool_width_label"
         android:text="@string/tool_BMI_result"
         android:textSize="@dimen/text_medium" />
 
@@ -121,8 +151,10 @@
         android:id="@+id/outputResultRFM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/colorBlueLight"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@color/colorToolOutputBox"
         android:ems="10"
         android:focusable="false"
         android:hint="@string/tool_RFM_result_hint"
@@ -133,16 +165,21 @@
         android:id="@+id/labelStatusRFM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        android:layout_columnSpan="1"
+        android:fontFamily="@font/kaushan_script"
         android:text="@string/tool_RFM_status"
+        android:gravity="right"
+        android:width="@dimen/tool_width_label"
         android:textSize="@dimen/text_medium" />
 
     <EditText
         android:id="@+id/outputStatusRFM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/colorBlueLight"
+        android:layout_marginRight="@dimen/margin_button"
+        android:background="@color/colorToolOutputBox"
         android:ems="10"
         android:focusable="false"
         android:hint="@string/tool_RFM_status_hint"

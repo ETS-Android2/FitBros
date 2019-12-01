@@ -6,25 +6,43 @@
 
     <ImageView
         android:id="@+id/workoutImage"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_secure" />
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/workout_bicep_01" />
 
     <TextView
         android:id="@+id/workoutName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginLeft="@dimen/recycle_margin"
+        android:layout_marginTop="@dimen/recycle_margin"
+        android:layout_marginRight="@dimen/recycle_margin"
+        android:layout_marginBottom="@dimen/recycle_margin"
+        android:fontFamily="@font/kaushan_script"
+        android:text="TextView"
+        android:textColor="@color/colorBlackTrue"
+        android:textSize="@dimen/text_medium" />
 
     <TextView
         android:id="@+id/workoutDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginLeft="@dimen/recycle_margin"
+        android:layout_marginRight="@dimen/recycle_margin"
+        android:layout_marginBottom="@dimen/recycle_margin"
+        android:text="TextView"
+        android:textColor="@color/colorBlackCharcoal"
+        android:textSize="@dimen/text_general" />
 
     <TextView
         android:id="@+id/workoutReps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginLeft="@dimen/recycle_margin"
+        android:layout_marginRight="@dimen/recycle_margin"
+        android:layout_marginBottom="@dimen/recycle_margin"
+        android:text="TextView"
+        android:textColor="@color/colorBlackCharcoal"
+        android:textSize="@dimen/text_general" />
 </LinearLayout>

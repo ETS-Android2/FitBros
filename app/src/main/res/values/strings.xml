@@ -12,6 +12,7 @@
     <string name="hello_blank_fragment">Hello blank English fragment</string>
 
     <!-- Home greeting messages -->
+    <string name="placeholder_greeting" translatable="false">Placeholder Greeting</string>
     <string name="home_greeting_morning">Good morning,&#160;</string>
     <string name="home_greeting_afternoon">Good afternoon,&#160;</string>
     <string name="home_greeting_evening">Good evening,&#160;</string>
@@ -23,7 +24,7 @@
     <string name="menu_core_muscles">Core Muscles</string>
     <string name="menu_cardio">Cardio</string>
     <string name="menu_cardio_long">Cardio Workout</string>
-    <string name="menu_tool">Tools &#38; Calculators</string>
+    <string name="menu_tool">Tools &#038; Calculators</string>
     <string name="menu_credits">Credits</string>
     <string name="menu_contacts">Tech Support</string>
     <string name="menu_workouts">Workouts</string>
@@ -31,32 +32,20 @@
     <!-- sub-navigation titles -->
     <string name="submenu_upper_bicep">Bicep</string>
     <string name="submenu_upper_tricep">Tricep</string>
-    <string name="submenu_upper_chest">Chest</string>
+    <string name="submenu_upper_back">Back</string>
     <string name="submenu_lower_quad">Quads</string>
     <string name="submenu_lower_hamstring">Hamstrings</string>
     <string name="submenu_lower_calves">Calves</string>
     <string name="submenu_core_abs">Abdominals</string>
     <string name="submenu_core_obliques">Obliques</string>
     <string name="submenu_core_glutes">Glutes</string>
-    <string name="submenu_cardio_treadmill">Treadmill</string>
-    <string name="submenu_cardio_cycle">Cycle</string>
-    <string name="submenu_cardio_jump">Jump Rope</string>
+    <string name="submenu_cardio_machine">Machine</string>
+    <string name="submenu_cardio_manual">Manual</string>
+    <string name="submenu_cardio_ropes">Ropes</string>
     <string name="submenu_tools_BMI">BMI: Body Mass Index</string>
     <string name="submenu_tools_BMI_short">BMI Calculator</string>
     <string name="submenu_tools_RFM">RFM: Relative Fat Mass Index</string>
     <string name="submenu_tools_RFM_short">RFM Calculator</string>
-
-    <!-- content -->
-    <string name="content_home_welcome">TODO Content English</string>
-    <string name="content_tools_info_BMI">TODO Content English</string>
-    <string name="content_tools_info_RFM">TODO Content English</string>
-
-    <!-- ListView content -->
-    <string name="description_upper_body">Content Upper Body</string>
-    <string name="description_lower_body">Content Lower Body</string>
-    <string name="description_core_muscles">Content Core Muscles</string>
-    <string name="description_cardio">Content Cardio</string>
-    <string name="description_tools">Content Tools</string>
 
     <!-- Tool content: BMI -->
     <string name="tool_name_BMI">BMI Calculator</string>
@@ -71,7 +60,6 @@
     <string name="tool_BMI_status">Status</string>
     <string name="tool_BMI_status_hint">your weight status</string>
     <string name="button_BMI_calculate">Calculate</string>
-    <string name="description_BMI">Content BMI</string>
 
     <!-- Tool content: RFM -->
     <string name="tool_name_RFM">RFM Calculator</string>
@@ -86,7 +74,8 @@
     <string name="tool_RFM_status">Status</string>
     <string name="tool_RFM_status_hint">your relative fat mass</string>
     <string name="button_RFM_calculate">Calculate</string>
-    <string name="description_RFM">Content RFM</string>
+    <string name="button_male">Male</string>
+    <string name="button_female">Female</string>
 
     <!-- Tool content: Intents -->
     <string name="button_tool_alarm">Set workout alarm</string>
@@ -99,6 +88,7 @@
     <string name="error_web">Please install software to access the web.</string>
     <string name="tool_alarm_message">Time to go to the gym!</string>
     <string name="tool_twitter_message">I%27m+at+the+gym.+%23fitbros</string>
+    <string name="tool_swipe" translatable="false">&#60;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#62;</string>
 
     <!-- Contact content: Intents -->
     <string name="button_contact_email">Email</string>
@@ -124,5 +114,168 @@
     <string name="preference_measurement_message">Choose between metric and imperial measures</string>
     <string name="preference_measurement_imperial">Imperial</string>
     <string name="preference_measurement_metric">Metric</string>
+
+    <!-- Workout Names -->
+    <string name="workout_name_bicep01">EZ-Bar Curls</string>
+    <string name="workout_name_bicep02">Standard Bar Curls</string>
+    <string name="workout_name_bicep03">Dumbbell Curls</string>
+    <string name="workout_name_tricep01">Tricep Pulldowns</string>
+    <string name="workout_name_tricep02">Tricep Extensions</string>
+    <string name="workout_name_tricep03">Dips</string>
+    <string name="workout_name_back01">Reverse-grip Upright Rows</string>
+    <string name="workout_name_back02">Seated Machine Rows</string>
+    <string name="workout_name_back03">Deadlifts</string>
+    <string name="workout_name_quads01">Squats</string>
+    <string name="workout_name_hams01">Box Jumps</string>
+    <string name="workout_name_calves01">Lunges</string>
+    <string name="workout_name_abd01">Battle Ropes</string>
+    <string name="workout_name_obliques01">Side Oblique Crunch</string>
+    <string name="workout_name_glutes01">Tire Flips</string>
+    <string name="workout_name_machine01">Treadmill</string>
+    <string name="workout_name_manual01">Cycling</string>
+    <string name="workout_name_ropes01">Rope Climbing</string>
+
+    <!-- Workout Descriptions -->
+    <string name="workout_description_bicep01">Hold bar using the handle grip helpers on the bar and attempt to curl up and down</string>
+    <string name="workout_description_bicep02">Hold bar shoulder-width apart and attempt to curl up and down</string>
+    <string name="workout_description_bicep03">Hold a dumbbell in each hand and attempt to curl each hand separately</string>
+    <string name="workout_description_tricep01">Slightly bend your knees and lean forward, pull down the rope and flex your triceps at the bottom</string>
+    <string name="workout_description_tricep02">Hold the dumbbell over your head and lower it until your arm is fully bent down, then lift it back above your head</string>
+    <string name="workout_description_tricep03">Lift yourself onto the bar and go down until your wrist is parallel with your elbows then go back up</string>
+    <string name="workout_description_back01">Hold a barbell with your palms facing out and slightly bend your knees, then lower the barbell until your elbows are locked and pull the barbell back up</string>
+    <string name="workout_description_back02">Sit on the seat and put your legs on the end with your knees slightly bent, then grab the bar and pull it back until you are fully arched and then slowly let the bar go back until your elbows are locked</string>
+    <string name="workout_description_back03">Put your feet shoulder width apart and move towards the bar until your shoe laces are directly under. Bend down and grab the bar and have your chest out and keep your back straight. Lift upwards and squeeze your glutes at the top then go back down in the same fashion.</string>
+    <string name="workout_description_quads01">Place a barbell with weights right below your neck and squat down until you hit right below 90 degrees, then attempt to lift back up</string>
+    <string name="workout_description_hams01">Bend your knees about 45 degrees and attempt to jump on the box, then jump back to the floor</string>
+    <string name="workout_description_calves01">Hold some low weight dumbbells and bend one knee until it touches the ground, then lift back up and repeat with your other knee</string>
+    <string name="workout_description_abd01">Hold the ropes and slightly bend your knees, then swing the ropes up and down while keep a good posture</string>
+    <string name="workout_description_obliques01">Lie down on the floor with your legs stacked and bring your right hand behind your head while using your left to hold yourself up. Bring your elbow up (connected to your head) and towards your feet then bring it back</string>
+    <string name="workout_description_glutes01">Bend your knees and keep your back straight. While in front of the tire grab underneath it and lift it upwards and flip it</string>
+    <string name="workout_description_machine01">Turn it to the speed and incline you\'d like and run</string>
+    <string name="workout_description_manual01">Sit on the bicycle and pedal with your feet</string>
+    <string name="workout_description_ropes01">Extend your arms and reach as far as you can and grab the rope using your feet as assistance to hold you up. Repeat this until you\'re at the top of the rope</string>
+
+    <!-- Workout Lengths -->
+    <string name="workout_length_bicep01">3 sets of 10 reps</string>
+    <string name="workout_length_bicep02">3 sets of 10 reps</string>
+    <string name="workout_length_bicep03">3 sets of 10 reps</string>
+    <string name="workout_length_tricep01">3 sets of 10 reps</string>
+    <string name="workout_length_tricep02">3 sets of 10 reps</string>
+    <string name="workout_length_tricep03">3 sets of 10 reps</string>
+    <string name="workout_length_back01">3 sets of 10 reps</string>
+    <string name="workout_length_back02">3 sets of 10 reps</string>
+    <string name="workout_length_back03">3 sets of 10 reps</string>
+    <string name="workout_length_quads01">3 sets of 10 reps</string>
+    <string name="workout_length_hams01">3 sets of 10 reps</string>
+    <string name="workout_length_calves01">3 sets of 10 reps</string>
+    <string name="workout_length_abd01">3 times for 60 seconds</string>
+    <string name="workout_length_obliques01">3 sets of 10 reps</string>
+    <string name="workout_length_glutes01">3 sets of 10 reps</string>
+    <string name="workout_length_machine01">Challenge yourself with speed and a 5% incline for 30 minutes</string>
+    <string name="workout_length_manual01">Steady pace for 30 minutes</string>
+    <string name="workout_length_ropes01">3 times</string>
+    <string name="description_cardio" translatable="false">Placeholder Cardio</string>
+    <string name="description_core_muscles" translatable="false">Placeholder Core Muscles</string>
+    <string name="description_lower_body" translatable="false">Placeholder Lower Body</string>
+    <string name="description_tools" translatable="false">Placeholder Tools</string>
+    <string name="description_upper_body" translatable="false">Placeholder Upper Body</string>
+
+    <!-- Credits -->
+    <string name="credit_title">Credits</string>
+
+    <!-- Credits: Coders -->
+    <string name="credit_team_title"><u>The FitBros Team</u></string>
+    <string name="credit_team_hasan" translatable="false">Hasan Muslemani</string>
+    <string name="credit_team_cordelle" translatable="false">Cordelle Neufeld</string>
+
+    <!-- Credits: Calculators -->
+    <string name="credit_calc_title"><u>Tool Algorithms</u></string>
+    <string name="credit_calc01">Body Mass Index (BMI) from</string>
+    <string name="credit_calc02">Centers for Disease Control and Prevention</string>
+    <string name="credit_calc03">Relative Fat Mass Index (RFM) from</string>
+    <string name="credit_calc04" translatable="false">Cedars-Sinai Medical Center</string>
+
+    <!-- Credits: Images 1 -->
+    <string name="credit_images_title1"><u>Images from Pexels.com</u></string>
+    <string name="credit_image01" translatable="false">Dani Alejandro</string>
+    <!-- https://www.pexels.com/photo/man-wearing-gray-bottoms-2827479/ -->
+    <string name="credit_image02" translatable="false">Sabel Blanco</string>
+    <!-- https://www.pexels.com/photo/person-lifting-dumbbell-1483217/ -->
+    <string name="credit_image03" translatable="false">Zakaria Boumliha</string>
+    <!-- https://www.pexels.com/photo/man-jumping-in-mid-air-holding-blue-ball-above-his-head-2827400/ -->
+    <string name="credit_image04" translatable="false">William Choquette</string>
+    <!-- https://www.pexels.com/photo/an-on-treadmill-1954524/ -->
+    <string name="credit_image05" translatable="false">DreamLens Production</string>
+    <!-- https://www.pexels.com/photo/grayscale-photography-of-man-carrying-barbell-896058/ -->
+    <!-- https://www.pexels.com/photo/grayscale-photography-of-man-in-short-standiung-896059/ -->
+    <string name="credit_image06" translatable="false">Victor Freitas</string>
+    <!-- https://www.pexels.com/photo/man-about-to-lift-barbell-2261477/ -->
+    <!-- https://www.pexels.com/photo/man-using-stationary-bike-897064/ -->
+    <string name="credit_image07" translatable="false">Cesar Galeão</string>
+    <!-- https://www.pexels.com/photo/man-holding-brown-rope-3253501/ -->
+    <!-- https://www.pexels.com/photo/man-in-black-tank-top-exercising-3253498/ -->
+    <!-- https://www.pexels.com/photo/man-lifting-vehicle-tire-3253499/ -->
+    <!-- https://www.pexels.com/photo/man-wearing-a-hull-tank-top-3253515/ -->
+    <string name="credit_image08" translatable="false">Anush Gorak</string>
+    <!-- https://www.pexels.com/photo/grayscale-photo-of-man-sitting-on-bench-1431283/ -->
+    <!-- https://www.pexels.com/photo/man-holding-barbell-1431282/ -->
+    <string name="credit_image09" translatable="false">Oscar Machado</string>
+    <!-- https://www.pexels.com/photo/man-lifting-weights-3025027/ -->
+    <string name="credit_image10" translatable="false">Leon Martinez</string>
+    <!-- https://www.pexels.com/photo/man-climbing-on-rope-2468339/ -->
+    <!-- https://www.pexels.com/photo/photo-of-man-jumping-on-box-1552248/ -->
+    <string name="credit_image11" translatable="false">Pixabay</string>
+    <!-- https://www.pexels.com/photo/athlete-bike-black-and-white-cycle-260409/ -->
+    <string name="credit_image12" translatable="false">Kuldeep Singhania</string>
+    <!-- https://www.pexels.com/photo/man-holding-black-dumbbells-2105493/ -->
+    <string name="credit_image13" translatable="false">Li Sun</string>
+    <!-- https://www.pexels.com/photo/man-doing-yoga-2294363/ -->
+
+    <!-- Credits: Images 2 -->
+    <string name="credit_images_title2"><u>Images from Unsplash.com</u></string>
+    <string name="credit_image20" translatable="false">Daniel Apodaca</string>
+    <!-- https://unsplash.com/photos/WdoQio6HPVA -->
+    <string name="credit_image21" translatable="false">Danielle Cerullo</string>
+    <!-- https://unsplash.com/photos/CQfNt66ttZM -->
+    <string name="credit_image22" translatable="false">Victor Freitas</string>
+    <!-- https://unsplash.com/photos/KkYWWpurqbE -->
+    <string name="credit_image23" translatable="false">Alexander Redl</string>
+    <!-- https://unsplash.com/photos/d3bYmnZ0ank -->
+
+    <!-- Credits: Logo -->
+    <string name="credit_logo_title" translatable="false"><u>Logo</u></string>
+    <string name="credit_logo" translatable="false">Vectors by Vecteezy.com</string>
+    <!-- https://www.vecteezy.com/vector-art/552419-raised-fist-vector-icon -->
+
+    <!-- Credits: Colour Palette -->
+    <string name="credit_colour_title"><u>Inspiration for Colour Palette</u></string>
+    <string name="credit_colour01" translatable="false">GraphicMama.com</string>
+    <string name="credit_colour02" translatable="false">HookAgency.com</string>
+
+    <!-- Credits: Typography -->
+    <string name="credit_typo_title"><u>Typography</u></string>
+    <string name="credit_typo01">Google Fonts</string>
+    <string name="credit_typo02">Kaushan Script by Impallari Type</string>
+
+    <!-- Credits: Translation -->
+    <string name="credit_translate_title"><u>Spanish Translation</u></string>
+    <string name="credit_translate01">Google Translate</string>
+    <string name="credit_translate02" translatable="false">Linguee.com</string>
+
+    <!-- Credits: Development Environments -->
+    <string name="credit_dvlp_title"><u>Development Tools</u></string>
+    <string name="credit_dvlp01" translatable="false">Adobe Photoshop CC 2019</string>
+    <string name="credit_dvlp02" translatable="false">Android Studio 3.5</string>
+
+    <!-- Credits: Thanks -->
+    <string name="credit_thanks_title"><u>With Gratitude</u></string>
+    <string name="credit_thanks01">Câi Filiault, Professor</string>
+    <string name="credit_thanks02">Mobile Applications Development Program</string>
+    <string name="credit_thanks03" translatable="false">St. Clair College</string>
+
+    <!-- Credits: Location -->
+    <string name="credit_location_title"><u>Proudly Crafted In</u></string>
+    <string name="credit_location01" translatable="false">Windsor, Ontario</string>
+    <string name="credit_location02" translatable="false">Canada</string>
 
 </resources>

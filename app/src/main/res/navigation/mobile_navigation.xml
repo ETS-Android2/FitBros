@@ -11,19 +11,39 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_nav_home_to_nav_tools"
-            app:destination="@id/nav_tools" />
+            app:destination="@id/nav_tools"
+            app:enterAnim="@anim/move_in"
+            app:exitAnim="@anim/move_out"
+            app:popEnterAnim="@anim/move_back_in"
+            app:popExitAnim="@anim/move_back_out" />
         <action
             android:id="@+id/action_nav_home_to_nav_cardio"
-            app:destination="@id/nav_cardio" />
+            app:destination="@id/nav_cardio"
+            app:enterAnim="@anim/move_in"
+            app:exitAnim="@anim/move_out"
+            app:popEnterAnim="@anim/move_back_in"
+            app:popExitAnim="@anim/move_back_out" />
         <action
             android:id="@+id/action_nav_home_to_nav_core_muscles"
-            app:destination="@id/nav_core_muscles" />
+            app:destination="@id/nav_core_muscles"
+            app:enterAnim="@anim/move_in"
+            app:exitAnim="@anim/move_out"
+            app:popEnterAnim="@anim/move_back_in"
+            app:popExitAnim="@anim/move_back_out" />
         <action
             android:id="@+id/action_nav_home_to_nav_lower_body"
-            app:destination="@id/nav_lower_body" />
+            app:destination="@id/nav_lower_body"
+            app:enterAnim="@anim/move_in"
+            app:exitAnim="@anim/move_out"
+            app:popEnterAnim="@anim/move_back_in"
+            app:popExitAnim="@anim/move_back_out" />
         <action
             android:id="@+id/action_nav_home_to_nav_upper_body"
-            app:destination="@id/nav_upper_body" />
+            app:destination="@id/nav_upper_body"
+            app:enterAnim="@anim/move_in"
+            app:exitAnim="@anim/move_out"
+            app:popEnterAnim="@anim/move_back_in"
+            app:popExitAnim="@anim/move_back_out" />
     </fragment>
     <fragment
         android:id="@+id/nav_upper_body"

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     android:orientation="vertical"
     tools:context=".Fragments.HomeFragment">
 
@@ -10,30 +12,22 @@
         android:id="@+id/imageHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_picture"
-        android:src="@android:drawable/ic_secure" />
-
-    <TextView
-        android:id="@+id/contentHome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/padding_text"
-        android:paddingRight="@dimen/padding_text"
-        android:paddingBottom="@dimen/padding_text"
-        android:text="@string/content_home_welcome"
-        android:textColor="@color/colorTextIndigo"
-        android:textSize="@dimen/text_general" />
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/nav_workout_home" />
 
     <TextView
         android:id="@+id/usernameHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-325dp"
+        android:layout_marginBottom="245dp"
+        android:fontFamily="@font/kaushan_script"
         android:paddingLeft="@dimen/padding_text"
         android:paddingRight="@dimen/padding_text"
         android:paddingBottom="@dimen/padding_text"
-        android:text="@string/content_home_welcome"
-        android:textColor="@color/colorTextIndigo"
-        android:textSize="@dimen/text_general" />
+        android:text="@string/placeholder_greeting"
+        android:textColor="@color/colorGrayLight"
+        android:textSize="@dimen/text_greeting" />
 
     <ListView
         android:id="@+id/homeNavList"

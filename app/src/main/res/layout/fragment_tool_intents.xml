@@ -5,52 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/background_light"
     tools:context=".Fragments.Tool_IntentsFragment">
 
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:paddingBottom="@dimen/tool_padding_swipe"
+        android:text="@string/tool_swipe"
+        android:textColor="@color/colorGoldLight"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageSwipeLeft"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_margin="@dimen/margin_picture"
-            app:srcCompat="@drawable/ic_swipe_left_grayblue_24dp" />
-
-        <ImageView
-            android:id="@+id/imageToolIntents"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_picture"
-            android:src="@android:drawable/ic_secure" />
-
-        <ImageView
-            android:id="@+id/imageSwipeRight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_margin="@dimen/margin_picture"
-            app:srcCompat="@drawable/ic_swipe_right_grayblue_24dp" />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/nav_tools" />
 
     <Button
         android:id="@+id/buttonGymAlarm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_button"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/button_tool_alarm"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonTextTools"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -60,12 +48,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/button_tool_twitter"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonTextTools"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -75,12 +63,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:layout_marginBottom="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:layout_marginBottom="@dimen/margin_button_bottom"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/button_tool_gym_map"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonTextTools"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
 
@@ -90,14 +78,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_button"
         android:layout_marginRight="@dimen/margin_button"
-        android:background="@color/colorBlueMedium"
+        android:background="@color/colorButton"
         android:paddingTop="@dimen/padding_button"
         android:paddingBottom="@dimen/padding_button"
         android:text="@string/button_tool_fit_tips"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorButtonTextTools"
         android:textSize="@dimen/text_general"
         android:textStyle="bold" />
-
-
 
 </LinearLayout>

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.fitbros.Constants;
+import com.example.fitbros.JavaBeans.Workout;
 import com.example.fitbros.R;
 
 
@@ -42,6 +43,8 @@ public class CoreFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_abd01), R.drawable.workout_core_abs_battle_ropes, getResources().getString(R.string.workout_description_abd01), getResources().getString(R.string.workout_length_abd01)));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
         });
@@ -51,6 +54,8 @@ public class CoreFragment extends Fragment {
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
 
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_obliques01), R.drawable.workout_core_obliques, getResources().getString(R.string.workout_description_obliques01), getResources().getString(R.string.workout_length_obliques01)));
+
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
         });
@@ -59,6 +64,8 @@ public class CoreFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Constants.workouts.removeAll(Constants.workouts);
+
+                Constants.workouts.add(new Workout(getResources().getString(R.string.workout_name_glutes01), R.drawable.workout_core_glutes, getResources().getString(R.string.workout_description_glutes01), getResources().getString(R.string.workout_length_glutes01)));
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_core_muscles_to_workoutFragment);
             }
