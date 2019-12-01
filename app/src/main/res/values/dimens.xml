@@ -8,6 +8,7 @@
 
     <!-- design -->
     <dimen name="margin_picture">60dp</dimen>
+    <dimen name="margin_picture_recycle">14dp</dimen>
     <dimen name="margin_button">30dp</dimen>
     <dimen name="margin_button_top">-30dp</dimen>
     <dimen name="margin_button_bottom">18dp</dimen>

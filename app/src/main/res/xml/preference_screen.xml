@@ -18,7 +18,7 @@
         android:title="@string/preference_language_title" />
 
     <ListPreference
-        android:defaultValue="imperial"
+        android:defaultValue="us"
         android:entries="@array/measurement_menu"
         android:entryValues="@array/measurement_values"
         android:key="measure"
