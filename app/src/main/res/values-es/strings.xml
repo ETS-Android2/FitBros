@@ -144,4 +144,16 @@
     <string name="workout_name_tricep01">Pullicens de tríceps</string>
     <string name="workout_name_tricep02">Extensiones de tríceps</string>
     <string name="workout_name_tricep03">Dips de entrenamiento</string>
+    <string name="credit_colour_title">Inspiración para la paleta de colores</string>
+    <string name="credit_dvlp_title">Herramientas de desarrollo</string>
+    <string name="credit_images_title1">Imágenes de Pexels.com</string>
+    <string name="credit_images_title2">Imágenes de Unsplash.com</string>
+    <string name="credit_logo_title">Logo de Vecteezy.com</string>
+    <string name="credit_team_title">El equipo de FitBros</string>
+    <string name="credit_title">Créditos</string>
+    <string name="credit_translate01">Traductor de Google</string>
+    <string name="credit_typo01">Fuentes de Google</string>
+    <string name="credit_typo02">Kaushan Script de Impallari Type</string>
+    <string name="credit_translate_title">Traducción Española</string>
+    <string name="credit_typo_title">Tipografía</string>
 </resources>

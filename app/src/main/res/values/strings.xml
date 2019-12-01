@@ -180,4 +180,84 @@
     <string name="description_tools" translatable="false">Placeholder Tools</string>
     <string name="description_upper_body" translatable="false">Placeholder Upper Body</string>
 
+    <!-- Credits -->
+    <string name="credit_title">Credits</string>
+
+    <!-- Credits: Coders -->
+    <string name="credit_team_title">The FitBros Team</string>
+    <string name="credit_team_hasan" translatable="false">Hasan Muslemani</string>
+    <string name="credit_team_cordelle" translatable="false">Cordelle Neufeld</string>
+
+    <!-- Credits: Logo -->
+    <string name="credit_logo_title">Logo from Vecteezy.com</string>
+    <string name="credit_logo" translatable="false">Vectors by Vecteezy</string>
+    <!-- https://www.vecteezy.com/vector-art/552419-raised-fist-vector-icon -->
+
+    <!-- Credits: Images 1 -->
+    <string name="credit_images_title1">Images from Pexels.com</string>
+    <string name="credit_image01" translatable="false">Dani Alejandro</string>
+    <!-- https://www.pexels.com/photo/man-wearing-gray-bottoms-2827479/ -->
+    <string name="credit_image02" translatable="false">Sabel Blanco</string>
+    <!-- https://www.pexels.com/photo/person-lifting-dumbbell-1483217/ -->
+    <string name="credit_image03" translatable="false">Zakaria Boumliha</string>
+    <!-- https://www.pexels.com/photo/man-jumping-in-mid-air-holding-blue-ball-above-his-head-2827400/ -->
+    <string name="credit_image04" translatable="false">William Choquette</string>
+    <!-- https://www.pexels.com/photo/an-on-treadmill-1954524/ -->
+    <string name="credit_image05" translatable="false">DreamLens Production</string>
+    <!-- https://www.pexels.com/photo/grayscale-photography-of-man-carrying-barbell-896058/ -->
+    <!-- https://www.pexels.com/photo/grayscale-photography-of-man-in-short-standiung-896059/ -->
+    <string name="credit_image06" translatable="false">Victor Freitas</string>
+    <!-- https://www.pexels.com/photo/man-about-to-lift-barbell-2261477/ -->
+    <!-- https://www.pexels.com/photo/man-using-stationary-bike-897064/ -->
+    <string name="credit_image07" translatable="false">Cesar Galeão</string>
+    <!-- https://www.pexels.com/photo/man-holding-brown-rope-3253501/ -->
+    <!-- https://www.pexels.com/photo/man-in-black-tank-top-exercising-3253498/ -->
+    <!-- https://www.pexels.com/photo/man-lifting-vehicle-tire-3253499/ -->
+    <!-- https://www.pexels.com/photo/man-wearing-a-hull-tank-top-3253515/ -->
+    <string name="credit_image08" translatable="false">Anush Gorak</string>
+    <!-- https://www.pexels.com/photo/grayscale-photo-of-man-sitting-on-bench-1431283/ -->
+    <!-- https://www.pexels.com/photo/man-holding-barbell-1431282/ -->
+    <string name="credit_image09" translatable="false">Oscar Machado</string>
+    <!-- https://www.pexels.com/photo/man-lifting-weights-3025027/ -->
+    <string name="credit_image10" translatable="false">Leon Martinez</string>
+    <!-- https://www.pexels.com/photo/man-climbing-on-rope-2468339/ -->
+    <!-- https://www.pexels.com/photo/photo-of-man-jumping-on-box-1552248/ -->
+    <string name="credit_image11" translatable="false">Pixabay</string>
+    <!-- https://www.pexels.com/photo/athlete-bike-black-and-white-cycle-260409/ -->
+    <string name="credit_image12" translatable="false">Kuldeep Singhania</string>
+    <!-- https://www.pexels.com/photo/man-holding-black-dumbbells-2105493/ -->
+    <string name="credit_image13" translatable="false">Li Sun</string>
+    <!-- https://www.pexels.com/photo/man-doing-yoga-2294363/ -->
+
+    <!-- Credits: Images 2 -->
+    <string name="credit_images_title2">Images from Unsplash.com</string>
+    <string name="credit_image20" translatable="false">Daniel Apodaca</string>
+    <!-- https://unsplash.com/photos/WdoQio6HPVA -->
+    <string name="credit_image21" translatable="false">Danielle Cerullo</string>
+    <!-- https://unsplash.com/photos/CQfNt66ttZM -->
+    <string name="credit_image22" translatable="false">Victor Freitas</string>
+    <!-- https://unsplash.com/photos/KkYWWpurqbE -->
+    <string name="credit_image23" translatable="false">Alexander Redl</string>
+    <!-- https://unsplash.com/photos/d3bYmnZ0ank -->
+
+    <!-- Credits: Colour Palette -->
+    <string name="credit_colour_title">Inspiration for Colour Palette</string>
+    <string name="credit_colour01" translatable="false">GraphicMama.com</string>
+    <string name="credit_colour02" translatable="false">HookAgency.com</string>
+
+    <!-- Credits: Typography -->
+    <string name="credit_typo_title">Typography</string>
+    <string name="credit_typo01">Google Fonts</string>
+    <string name="credit_typo02">Kaushan Script by Impallari Type</string>
+
+    <!-- Credits: Translation -->
+    <string name="credit_translate_title">Spanish Translation</string>
+    <string name="credit_translate01">Google Translate</string>
+    <string name="credit_translate02" translatable="false">Linguee.com</string>
+
+    <!-- Credits: Development Environments -->
+    <string name="credit_dvlp_title">Development Tools</string>
+    <string name="credit_dvlp01" translatable="false">Adobe Photoshop CC 2019</string>
+    <string name="credit_dvlp02" translatable="false">Android Studio 3.5</string>
+
 </resources>
