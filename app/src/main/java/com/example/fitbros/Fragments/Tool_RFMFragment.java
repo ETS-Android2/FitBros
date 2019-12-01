@@ -4,6 +4,7 @@ package com.example.fitbros.Fragments;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
@@ -37,6 +38,8 @@ public class Tool_RFMFragment extends Fragment {
     Button femaleButton;
     String gender = "male";
 
+    double localResult = 0;
+
     // Link to menu (Part 1)
     SharedPreferences sharedPreferences;
     String measurement;
@@ -57,14 +60,27 @@ public class Tool_RFMFragment extends Fragment {
         resultRFM = view.findViewById(R.id.outputResultRFM);
         fatStatus = view.findViewById(R.id.outputStatusRFM);
 
+        userWaist.setText("");
+        userHeight.setText("");
+
         //link buttons
         maleButton = view.findViewById(R.id.maleButton);
         femaleButton = view.findViewById(R.id.femaleButton);
+
+        maleButton.setTextColor(getResources().getColor(R.color.colorGoldLight));
+        femaleButton.setTextColor(Color.WHITE);
 
         maleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 gender = "male";
+
+                maleButton.setTextColor(getResources().getColor(R.color.colorGoldLight));
+                femaleButton.setTextColor(Color.WHITE);
+
+                if(localResult != 0) {
+                    calculate();
+                }
             }
         });
 
@@ -72,6 +88,13 @@ public class Tool_RFMFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 gender = "female";
+
+                femaleButton.setTextColor(getResources().getColor(R.color.colorGoldLight));
+                maleButton.setTextColor(Color.WHITE);
+
+                if(localResult != 0) {
+                    calculate();
+                }
             }
         });
 
@@ -96,57 +119,75 @@ public class Tool_RFMFragment extends Fragment {
             public void onClick(View v) {
                 hideKeyboardFrom(getContext(), view);
 
-                double localWaist;
-                double localHeight;
-                double localResult = 0;
-                String localStatus;
-                int colorRisk=0;
-
-                localWaist = Double.parseDouble(userWaist.getText().toString());
-                localHeight = Double.parseDouble(userHeight.getText().toString());
-
-                // Potential TODO: check for gender of user
-                if (gender.equals("male")) {
-                    // Formula for men
-                    localResult = 64 - (20 * localHeight/localWaist);
-
-                } else if (gender.equals("female")){
-
-                    // Formula for women
-                    localResult = 76 - (20 * localHeight/localWaist);
-
+                if(!userHeight.getText().toString().equals("") && !userWaist.getText().toString().equals("")) {
+                    calculate();
                 }
-
-                // format result to include trailing 0 if .0
-                String formattedResult = String.format("%.1f", localResult);
-
-                resultRFM.setText(formattedResult);
-
-                // RFM Interpretation
-
-                if (localResult < 18.5) {
-                    localStatus = "Underweight";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskRed);
-                } else if (localResult < 25.0) {
-                    localStatus = "Normal or Healthy";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskGreen);
-                } else if (localResult < 30.0) {
-                    localStatus = "Overweight";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskYellow);
-                } else {
-                    localStatus = "Obese";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskRed);
-                }
-
-                fatStatus.setText(localStatus);
-                fatStatus.setBackgroundColor(colorRisk);
-
             }
         });
 
         return view;
     }
 
+    /**
+     * This will calculate the result based on the users waist and height
+     * @author Hasan Muslemani
+     * @date December 1, 2019
+     * @version 1.0
+     */
+    public void calculate() {
+        double localWaist;
+        double localHeight;
+        String localStatus;
+        int colorRisk=0;
+
+        localWaist = Double.parseDouble(userWaist.getText().toString());
+        localHeight = Double.parseDouble(userHeight.getText().toString());
+
+        // Potential TODO: check for gender of user
+        if (gender.equals("male")) {
+            // Formula for men
+            localResult = 64 - (20 * localHeight/localWaist);
+
+        } else if (gender.equals("female")){
+
+            // Formula for women
+            localResult = 76 - (20 * localHeight/localWaist);
+
+        }
+
+        // format result to include trailing 0 if .0
+        String formattedResult = String.format("%.1f", localResult);
+
+        resultRFM.setText(formattedResult);
+
+        // RFM Interpretation
+
+        if (localResult < 18.5) {
+            localStatus = "Underweight";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskRed);
+        } else if (localResult < 25.0) {
+            localStatus = "Normal or Healthy";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskGreen);
+        } else if (localResult < 30.0) {
+            localStatus = "Overweight";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskYellow);
+        } else {
+            localStatus = "Obese";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskRed);
+        }
+
+        fatStatus.setText(localStatus);
+        fatStatus.setBackgroundColor(colorRisk);
+    }
+
+    /**
+     * This will take the keyboard off the screen
+     * @param context
+     * @param view
+     * @author Hasan Muslemani
+     * @date November 20, 2019
+     * @version 1.0
+     */
     public static void hideKeyboardFrom(Context context, View view) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
