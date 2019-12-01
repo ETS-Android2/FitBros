@@ -60,6 +60,9 @@ public class Tool_RFMFragment extends Fragment {
         resultRFM = view.findViewById(R.id.outputResultRFM);
         fatStatus = view.findViewById(R.id.outputStatusRFM);
 
+        userWaist.setText("");
+        userHeight.setText("");
+
         //link buttons
         maleButton = view.findViewById(R.id.maleButton);
         femaleButton = view.findViewById(R.id.femaleButton);
@@ -116,14 +119,21 @@ public class Tool_RFMFragment extends Fragment {
             public void onClick(View v) {
                 hideKeyboardFrom(getContext(), view);
 
-                calculate();
-
+                if(!userHeight.getText().toString().equals("") && !userWaist.getText().toString().equals("")) {
+                    calculate();
+                }
             }
         });
 
         return view;
     }
 
+    /**
+     * This will calculate the result based on the users waist and height
+     * @author Hasan Muslemani
+     * @date December 1, 2019
+     * @version 1.0
+     */
     public void calculate() {
         double localWaist;
         double localHeight;

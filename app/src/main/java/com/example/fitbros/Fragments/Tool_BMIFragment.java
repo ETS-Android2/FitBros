@@ -74,51 +74,63 @@ public class Tool_BMIFragment extends Fragment {
             public void onClick(View v) {
                 hideKeyboardFrom(getContext(), view);
 
-                double localWeight = 0;
-                double localHeight = 0;
-                double localResult = 0;
-                String localStatus;
-                int colorRisk=0;
-
-                localWeight = Double.parseDouble(userWeight.getText().toString());
-                localHeight = Double.parseDouble(userHeight.getText().toString());
-
-                // check for user preference of metric or imperial
-                if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
-                    localResult = 703 * localWeight / (localHeight * localHeight);
-
-                } else {
-                    localResult = localWeight / ((localHeight/100) * (localHeight/100));
+                if(!userHeight.getText().toString().equals("") && !userWeight.getText().toString().equals("")) {
+                    calculate();
                 }
-
-                // format result to include trailing 0 if .0
-                String formattedResult = String.format("%.1f", localResult);
-
-                resultBMI.setText(formattedResult);
-
-                // BMI Interpretation
-
-                if (localResult < 18.5) {
-                    localStatus = "Underweight";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskOrange);
-                } else if (localResult < 25.0) {
-                    localStatus = "Normal or Healthy";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskGreen);
-                } else if (localResult < 30.0) {
-                    localStatus = "Overweight";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskYellow);
-                } else {
-                    localStatus = "Obese";
-                    colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskOrange);
-                }
-
-                weightStatus.setText(localStatus);
-                weightStatus.setBackgroundColor(colorRisk);
 
             }
         });
 
         return view;
+    }
+
+    /**
+     * This will calculate the result based on the users waist and height
+     * @author Hasan Muslemani
+     * @date December 1, 2019
+     * @version 1.0
+     */
+    public void calculate() {
+        double localWeight = 0;
+        double localHeight = 0;
+        double localResult = 0;
+        String localStatus;
+        int colorRisk=0;
+
+        localWeight = Double.parseDouble(userWeight.getText().toString());
+        localHeight = Double.parseDouble(userHeight.getText().toString());
+
+        // check for user preference of metric or imperial
+        if (measurement.equals(Constants.MEASUREMENT_IMPERIAL)) {
+            localResult = 703 * localWeight / (localHeight * localHeight);
+
+        } else {
+            localResult = localWeight / ((localHeight/100) * (localHeight/100));
+        }
+
+        // format result to include trailing 0 if .0
+        String formattedResult = String.format("%.1f", localResult);
+
+        resultBMI.setText(formattedResult);
+
+        // BMI Interpretation
+
+        if (localResult < 18.5) {
+            localStatus = "Underweight";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskOrange);
+        } else if (localResult < 25.0) {
+            localStatus = "Normal or Healthy";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskGreen);
+        } else if (localResult < 30.0) {
+            localStatus = "Overweight";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskYellow);
+        } else {
+            localStatus = "Obese";
+            colorRisk = ContextCompat.getColor(getContext(), R.color.colorRiskOrange);
+        }
+
+        weightStatus.setText(localStatus);
+        weightStatus.setBackgroundColor(colorRisk);
     }
 
     /**
