@@ -26,5 +26,8 @@
     <dimen name="text_medium">24sp</dimen>
     <dimen name="text_large">36sp</dimen>
 
+    <!-- recycleview format -->
+    <dimen name="recycle_margin">12dp</dimen>
+
 
 </resources>
