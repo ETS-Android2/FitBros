@@ -160,4 +160,8 @@
     <string name="credit_thanks_title"><u>Con gratitud</u></string>
     <string name="credit_thanks02">Programa de desarrollo de aplicaciones móviles</string>
     <string name="credit_logo">Vectors de Vecteezy.com</string>
+    <string name="credit_calc_title"><u>algoritmos de herramientas</u></string>
+    <string name="credit_calc02">Centros para el Control y la Prevención de Enfermedades</string>
+    <string name="credit_calc01">índice de masa corporal</string>
+    <string name="credit_calc03">índice de masa grasa relativa</string>
 </resources>
