@@ -61,6 +61,57 @@
             android:textSize="@dimen/text_general" />
 
         <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_calc_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_calc01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_calc02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_calc03"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_calc04"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

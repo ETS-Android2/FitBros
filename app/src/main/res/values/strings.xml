@@ -188,10 +188,12 @@
     <string name="credit_team_hasan" translatable="false">Hasan Muslemani</string>
     <string name="credit_team_cordelle" translatable="false">Cordelle Neufeld</string>
 
-    <!-- Credits: Logo -->
-    <string name="credit_logo_title" translatable="false"><u>Logo</u></string>
-    <string name="credit_logo" translatable="false">Vectors by Vecteezy.com</string>
-    <!-- https://www.vecteezy.com/vector-art/552419-raised-fist-vector-icon -->
+    <!-- Credits: Calculators -->
+    <string name="credit_calc_title"><u>Tool Algorithms</u></string>
+    <string name="credit_calc01">Body Mass Index (BMI) from</string>
+    <string name="credit_calc02">Centers for Disease Control and Prevention</string>
+    <string name="credit_calc03">Relative Fat Mass Index (RFM) from</string>
+    <string name="credit_calc04" translatable="false">Cedars-Sinai Medical Center</string>
 
     <!-- Credits: Images 1 -->
     <string name="credit_images_title1"><u>Images from Pexels.com</u></string>
@@ -240,6 +242,11 @@
     <string name="credit_image23" translatable="false">Alexander Redl</string>
     <!-- https://unsplash.com/photos/d3bYmnZ0ank -->
 
+    <!-- Credits: Logo -->
+    <string name="credit_logo_title" translatable="false"><u>Logo</u></string>
+    <string name="credit_logo" translatable="false">Vectors by Vecteezy.com</string>
+    <!-- https://www.vecteezy.com/vector-art/552419-raised-fist-vector-icon -->
+
     <!-- Credits: Colour Palette -->
     <string name="credit_colour_title"><u>Inspiration for Colour Palette</u></string>
     <string name="credit_colour01" translatable="false">GraphicMama.com</string>
@@ -270,6 +277,5 @@
     <string name="credit_location_title"><u>Proudly Crafted In</u></string>
     <string name="credit_location01" translatable="false">Windsor, Ontario</string>
     <string name="credit_location02" translatable="false">Canada</string>
-
 
 </resources>
