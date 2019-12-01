@@ -10,16 +10,6 @@
     <string name="button_tool_fit_tips">consejos de fitness</string>
     <string name="button_tool_gym_map">encuentra un gimnasio</string>
     <string name="button_tool_twitter">tweet tu entrenamiento</string>
-    <string name="content_home_welcome">TODO Content Spanish</string>
-    <string name="content_tools_info_BMI">TODO Content Spanish</string>
-    <string name="content_tools_info_RFM">TODO Content Spanish</string>
-    <string name="description_BMI">TODO Content Spanish</string>
-    <string name="description_RFM">TODO Content Spanish</string>
-    <string name="description_cardio">TODO Content Spanish</string>
-    <string name="description_core_muscles">TODO Content Spanish</string>
-    <string name="description_lower_body">TODO Content Spanish</string>
-    <string name="description_tools">TODO Content Spanish</string>
-    <string name="description_upper_body">TODO Content Spanish</string>
     <string name="error_alarm">Instale la alarma para completar la tarea.</string>
     <string name="error_email">Instale Twitter e inicie sesión para completar la tarea.</string>
     <string name="error_maps">Instala Google Maps para completar la tarea.</string>

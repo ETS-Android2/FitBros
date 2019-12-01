@@ -25,7 +25,7 @@
         android:paddingLeft="@dimen/padding_text"
         android:paddingRight="@dimen/padding_text"
         android:paddingBottom="@dimen/padding_text"
-        android:text="@string/content_home_welcome"
+        android:text="@string/placeholder_greeting"
         android:textColor="@color/colorGrayLight"
         android:textSize="@dimen/text_greeting" />
 

@@ -12,6 +12,7 @@
     <string name="hello_blank_fragment">Hello blank English fragment</string>
 
     <!-- Home greeting messages -->
+    <string name="placeholder_greeting" translatable="false">Placeholder Greeting</string>
     <string name="home_greeting_morning">Good morning,&#160;</string>
     <string name="home_greeting_afternoon">Good afternoon,&#160;</string>
     <string name="home_greeting_evening">Good evening,&#160;</string>
@@ -46,18 +47,6 @@
     <string name="submenu_tools_RFM">RFM: Relative Fat Mass Index</string>
     <string name="submenu_tools_RFM_short">RFM Calculator</string>
 
-    <!-- content -->
-    <string name="content_home_welcome">TODO Content English</string>
-    <string name="content_tools_info_BMI">TODO Content English</string>
-    <string name="content_tools_info_RFM">TODO Content English</string>
-
-    <!-- ListView content -->
-    <string name="description_upper_body">Content Upper Body</string>
-    <string name="description_lower_body">Content Lower Body</string>
-    <string name="description_core_muscles">Content Core Muscles</string>
-    <string name="description_cardio">Content Cardio</string>
-    <string name="description_tools">Content Tools</string>
-
     <!-- Tool content: BMI -->
     <string name="tool_name_BMI">BMI Calculator</string>
     <string name="tool_BMI_weight">Weight</string>
@@ -71,7 +60,6 @@
     <string name="tool_BMI_status">Status</string>
     <string name="tool_BMI_status_hint">your weight status</string>
     <string name="button_BMI_calculate">Calculate</string>
-    <string name="description_BMI">Content BMI</string>
 
     <!-- Tool content: RFM -->
     <string name="tool_name_RFM">RFM Calculator</string>
@@ -86,7 +74,6 @@
     <string name="tool_RFM_status">Status</string>
     <string name="tool_RFM_status_hint">your relative fat mass</string>
     <string name="button_RFM_calculate">Calculate</string>
-    <string name="description_RFM">Content RFM</string>
     <string name="button_male">Male</string>
     <string name="button_female">Female</string>
 
@@ -101,7 +88,7 @@
     <string name="error_web">Please install software to access the web.</string>
     <string name="tool_alarm_message">Time to go to the gym!</string>
     <string name="tool_twitter_message">I%27m+at+the+gym.+%23fitbros</string>
-    <string name="tool_swipe">&#60;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#62;</string>
+    <string name="tool_swipe" translatable="false">&#60;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#62;</string>
 
     <!-- Contact content: Intents -->
     <string name="button_contact_email">Email</string>
@@ -187,5 +174,10 @@
     <string name="workout_length_machine01">5kmph speed and 5% incline for 30 minutes</string>
     <string name="workout_length_manual01">Steady pace for 30 minutes</string>
     <string name="workout_length_ropes01">3 times</string>
+    <string name="description_cardio" translatable="false">Placeholder Cardio</string>
+    <string name="description_core_muscles" translatable="false">Placeholder Core Muscles</string>
+    <string name="description_lower_body" translatable="false">Placeholder Lower Body</string>
+    <string name="description_tools" translatable="false">Placeholder Tools</string>
+    <string name="description_upper_body" translatable="false">Placeholder Upper Body</string>
 
 </resources>

@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingBottom="@dimen/tool_padding_swipe"
         android:text="@string/tool_swipe"
         android:textColor="@color/colorGoldLight"
         android:textSize="@dimen/text_medium"
