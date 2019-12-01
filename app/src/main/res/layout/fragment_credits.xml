@@ -1,231 +1,474 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/colorBlackTrue"
     tools:context=".Fragments.CreditsFragment">
 
-    <TextView
-        android:id="@+id/textView1"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_title" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_team_title" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kaushan_script"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/credits_title" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_team_hasan" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_team_cordelle" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_team_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_logo_title" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_team_hasan"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_logo" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_team_cordelle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_images_title1" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_images_title1"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image01" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image02" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image03" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image03"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image04" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image04"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image05" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image05"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image06" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image06"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image07" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image07"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image08" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image08"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image09" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image09"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image10" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image10"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image11" />
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image11"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image12" />
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image12"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image13" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image13"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_images_title2" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_images_title2"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image20" />
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image20"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image21" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image21"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image22" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image22"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_image23" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_image23"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_colour_title" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_logo_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_colour01" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_logo"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_colour02" />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_colour_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_typo_title" />
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_colour01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_typo01" />
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_colour02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_typo02" />
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_typo_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_translate_title" />
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_typo01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_translate01" />
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_typo02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_translate02" />
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_translate_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
 
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_dvlp_title" />
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_translate01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_dvlp01" />
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_translate02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
 
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credit_dvlp02" />
-    
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_dvlp_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_dvlp01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_dvlp02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_thanks_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_thanks01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_thanks02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_thanks03"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_location_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/kaushan_script"
+            android:textSize="@dimen/credits_subtitle" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_location01"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/padding_text_credits"
+            android:text="@string/credit_location02"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_general" />
+
+    </LinearLayout>
+
+</ScrollView>

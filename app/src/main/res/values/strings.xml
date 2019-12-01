@@ -184,17 +184,17 @@
     <string name="credit_title">Credits</string>
 
     <!-- Credits: Coders -->
-    <string name="credit_team_title">The FitBros Team</string>
+    <string name="credit_team_title"><u>The FitBros Team</u></string>
     <string name="credit_team_hasan" translatable="false">Hasan Muslemani</string>
     <string name="credit_team_cordelle" translatable="false">Cordelle Neufeld</string>
 
     <!-- Credits: Logo -->
-    <string name="credit_logo_title">Logo from Vecteezy.com</string>
-    <string name="credit_logo" translatable="false">Vectors by Vecteezy</string>
+    <string name="credit_logo_title" translatable="false"><u>Logo</u></string>
+    <string name="credit_logo" translatable="false">Vectors by Vecteezy.com</string>
     <!-- https://www.vecteezy.com/vector-art/552419-raised-fist-vector-icon -->
 
     <!-- Credits: Images 1 -->
-    <string name="credit_images_title1">Images from Pexels.com</string>
+    <string name="credit_images_title1"><u>Images from Pexels.com</u></string>
     <string name="credit_image01" translatable="false">Dani Alejandro</string>
     <!-- https://www.pexels.com/photo/man-wearing-gray-bottoms-2827479/ -->
     <string name="credit_image02" translatable="false">Sabel Blanco</string>
@@ -230,7 +230,7 @@
     <!-- https://www.pexels.com/photo/man-doing-yoga-2294363/ -->
 
     <!-- Credits: Images 2 -->
-    <string name="credit_images_title2">Images from Unsplash.com</string>
+    <string name="credit_images_title2"><u>Images from Unsplash.com</u></string>
     <string name="credit_image20" translatable="false">Daniel Apodaca</string>
     <!-- https://unsplash.com/photos/WdoQio6HPVA -->
     <string name="credit_image21" translatable="false">Danielle Cerullo</string>
@@ -241,23 +241,35 @@
     <!-- https://unsplash.com/photos/d3bYmnZ0ank -->
 
     <!-- Credits: Colour Palette -->
-    <string name="credit_colour_title">Inspiration for Colour Palette</string>
+    <string name="credit_colour_title"><u>Inspiration for Colour Palette</u></string>
     <string name="credit_colour01" translatable="false">GraphicMama.com</string>
     <string name="credit_colour02" translatable="false">HookAgency.com</string>
 
     <!-- Credits: Typography -->
-    <string name="credit_typo_title">Typography</string>
+    <string name="credit_typo_title"><u>Typography</u></string>
     <string name="credit_typo01">Google Fonts</string>
     <string name="credit_typo02">Kaushan Script by Impallari Type</string>
 
     <!-- Credits: Translation -->
-    <string name="credit_translate_title">Spanish Translation</string>
+    <string name="credit_translate_title"><u>Spanish Translation</u></string>
     <string name="credit_translate01">Google Translate</string>
     <string name="credit_translate02" translatable="false">Linguee.com</string>
 
     <!-- Credits: Development Environments -->
-    <string name="credit_dvlp_title">Development Tools</string>
+    <string name="credit_dvlp_title"><u>Development Tools</u></string>
     <string name="credit_dvlp01" translatable="false">Adobe Photoshop CC 2019</string>
     <string name="credit_dvlp02" translatable="false">Android Studio 3.5</string>
+
+    <!-- Credits: Thanks -->
+    <string name="credit_thanks_title"><u>With Gratitude</u></string>
+    <string name="credit_thanks01">Câi Filiault, Professor</string>
+    <string name="credit_thanks02">Mobile Applications Development Program</string>
+    <string name="credit_thanks03" translatable="false">St. Clair College</string>
+
+    <!-- Credits: Location -->
+    <string name="credit_location_title"><u>Proudly Crafted In</u></string>
+    <string name="credit_location01" translatable="false">Windsor, Ontario</string>
+    <string name="credit_location02" translatable="false">Canada</string>
+
 
 </resources>
