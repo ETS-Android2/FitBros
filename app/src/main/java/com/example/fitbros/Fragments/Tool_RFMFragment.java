@@ -38,6 +38,8 @@ public class Tool_RFMFragment extends Fragment {
     Button femaleButton;
     String gender = "male";
 
+    double localResult = 0;
+
     // Link to menu (Part 1)
     SharedPreferences sharedPreferences;
     String measurement;
@@ -72,6 +74,10 @@ public class Tool_RFMFragment extends Fragment {
 
                 maleButton.setTextColor(getResources().getColor(R.color.colorGoldLight));
                 femaleButton.setTextColor(Color.WHITE);
+
+                if(localResult != 0) {
+                    calculate();
+                }
             }
         });
 
@@ -82,6 +88,10 @@ public class Tool_RFMFragment extends Fragment {
 
                 femaleButton.setTextColor(getResources().getColor(R.color.colorGoldLight));
                 maleButton.setTextColor(Color.WHITE);
+
+                if(localResult != 0) {
+                    calculate();
+                }
             }
         });
 
@@ -117,7 +127,6 @@ public class Tool_RFMFragment extends Fragment {
     public void calculate() {
         double localWaist;
         double localHeight;
-        double localResult = 0;
         String localStatus;
         int colorRisk=0;
 
