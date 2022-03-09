@@ -39,24 +39,24 @@ The user can select exercises from 4 workout categories:
 
 These selections are available from the Home screen in a ListView, as well as the side Navigation Drawer. Of note, glutes are included in Core Muscles.
 
-![Image of Home Screen](README-FitBros01.jpg)
+![Image of Home Screen](https://user-images.githubusercontent.com/55886048/157558594-75d29cf4-e1e7-4d8e-9627-447653b40fd1.jpg)
 *Figure 1. Home Screen*
 
-![Image of Home Screen](README-FitBros02.jpg)
+![Image of Home Screen](https://user-images.githubusercontent.com/55886048/157558681-a9daf527-0abe-4900-bafe-3a7d234a633f.jpg)
 *Figure 2. Navigation Drawer*
 
 ### Target Workout
 
 Within each category, the user can select from 3 targets. For example, the category Upper Body provides options for 3 target muscle groups: Bicep, Tricep, and Back.
 
-![Image of Home Screen](README-FitBros03.jpg)
+![Image of Home Screen](https://user-images.githubusercontent.com/55886048/157558758-f5e55a3c-5b19-4709-a9ca-69f93dd8d540.jpg)
 *Figure 3. Muscle Groups*
 
 ### Exercise options
 
 When a target button is selected, the user is provided with a RecyclerView of exercise options.
 
-![Image of Home Screen](README-FitBros04.jpg)
+![Image of Home Screen](https://user-images.githubusercontent.com/55886048/157558829-3ae0c052-e93e-4aa6-b322-f0ea385a3c52.jpg)
 *Figure 4. Exercise Choices*
 
 ## Tools & Calculators
