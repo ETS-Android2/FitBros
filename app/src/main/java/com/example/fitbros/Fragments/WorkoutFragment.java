@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.fitbros.Constants;
-import com.example.fitbros.CustomRecyclerViewAdapter;
+import com.example.fitbros.Adapters.CustomRecyclerViewAdapter;
 import com.example.fitbros.R;
 
 

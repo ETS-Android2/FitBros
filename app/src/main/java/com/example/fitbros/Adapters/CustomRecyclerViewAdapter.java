@@ -1,4 +1,4 @@
-package com.example.fitbros;
+package com.example.fitbros.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fitbros.JavaBeans.Workout;
+import com.example.fitbros.R;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.fitbros;
+package com.example.fitbros.Activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,6 +15,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.fitbros.Fragments.ContactFragment;
+import com.example.fitbros.R;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
